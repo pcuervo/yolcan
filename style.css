@@ -1325,6 +1325,9 @@ mark,
 .text-capitalize {
   text-transform: capitalize;
 }
+.text-strong {
+  font-weight: bold!important;
+}
 .text-muted {
   color: #777777;
 }
@@ -1362,6 +1365,9 @@ a.text-warning:focus {
 a.text-danger:hover,
 a.text-danger:focus {
   color: #843534;
+}
+.text-shadow {
+  text-shadow: 2px 2px 1px #222222;
 }
 .bg-primary {
   color: #fff;
@@ -6592,6 +6598,18 @@ button.close {
 }
 .underline {
   text-decoration: underline;
+}
+.color-primary {
+  color: #498D42;
+}
+.color-light {
+  color: #fff;
+}
+.bg-primary {
+  background-color: #498D42;
+}
+.bg-primary-darken {
+  background-color: #000000;
 }
 .width-100 {
   width: 100%;
