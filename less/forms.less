@@ -474,7 +474,7 @@ input[type="checkbox"] {
 .form-inline {
 
   // Kick in the inline
-  @media (min-width: @screen-sm-min) {
+  // @media (min-width: @screen-sm-min) {
     // Inline-block all the things for "inline"
     .form-group {
       display: inline-block;
@@ -487,6 +487,7 @@ input[type="checkbox"] {
       display: inline-block;
       width: auto; // Prevent labels from stacking above inputs in `.form-group`
       vertical-align: middle;
+      border-radius: 0px;
     }
 
     // Make static controls behave like regular ones
@@ -503,7 +504,7 @@ input[type="checkbox"] {
       .form-control {
         width: auto;
       }
-    }
+    // }
 
     // Input groups need that 100% width though
     .input-group > .form-control {
