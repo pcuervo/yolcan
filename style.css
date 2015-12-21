@@ -1534,6 +1534,9 @@ address {
 .word-spacing {
   word-spacing: 5px;
 }
+fz-large {
+  font-size: 20px;
+}
 code,
 kbd,
 pre,
@@ -7062,6 +7065,13 @@ button.close {
     display: none !important;
   }
 }
+footer .svg {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer h3 {
+  margin-bottom: 20px;
+}
 icon {
   display: inline-block;
   vertical-align: middle;
@@ -7138,9 +7148,5 @@ icon {
 .icon--stroke polyline,
 .icon--stroke polygon {
   stroke: currentColor;
-}
-footer .svg {
-  margin-left: 5px;
-  margin-right: 5px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
