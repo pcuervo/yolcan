@@ -1123,9 +1123,11 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -2558,9 +2560,11 @@ output {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -ms-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -3470,9 +3474,11 @@ input[type="button"].btn-block {
 }
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -ms-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
 }
 .fade.in {
   opacity: 1;
@@ -5003,9 +5009,11 @@ a.badge:focus {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: border 0.2s ease-in-out;
-  -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
+  -webkit-transition: border 0.2s ease-in-out;
+  -moz-transition: border 0.2s ease-in-out;
+  -ms-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -5132,9 +5140,11 @@ a.thumbnail.active {
   background-color: #337ab7;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
   transition: width 0.6s ease;
+  -webkit-transition: width 0.6s ease;
+  -moz-transition: width 0.6s ease;
+  -ms-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
 }
 .progress-striped .progress-bar,
 .progress-bar-striped {
@@ -6243,9 +6253,11 @@ button.close {
 .carousel-inner > .item {
   display: none;
   position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
+  -webkit-transition: 0.6s ease-in-out left;
+  -moz-transition: 0.6s ease-in-out left;
+  -ms-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -7025,5 +7037,88 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .2em;
+  margin-left: .2em;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+/*------------------------------------*\
+    #SIZES
+\*------------------------------------*/
+.icon--responsive {
+  width: 100%;
+  height: auto;
+}
+.icon--iconed {
+  width: 20px !important;
+  height: 20px;
+}
+.icon--iconed--medium {
+  width: 24px !important;
+  height: 24px;
+}
+.icon--iconed--large {
+  width: 35px !important;
+  height: 35px;
+}
+.icon--iconed--xxlarge {
+  width: 50px !important;
+  height: 50px;
+}
+.icon--iconed--medium-xs {
+  width: 24px !important;
+  height: 24px;
+}
+@media (max-width: 480px) {
+  .icon--iconed--medium-xs {
+    width: 14px !important;
+    height: 14px;
+  }
+}
+/*------------------------------------*\
+  #COLOR
+
+
+
+\*------------------------------------*/
+/**
+ * Fill
+**/
+.icon--fill path,
+.icon--fill line,
+.icon--fill circle,
+.icon--fill ellipse,
+.icon--fill polyline,
+.icon--fill polygon {
+  fill: currentColor;
+}
+/**
+ * Stroke
+**/
+.icon--stroke {
+  stroke-width: 1.5;
+}
+.icon--thickness-1 {
+  stroke-width: 1;
+}
+.icon--thickness-2 {
+  stroke-width: 2;
+}
+.icon--thickness-3 {
+  stroke-width: 3;
+}
+.icon--stroke path,
+.icon--stroke line,
+.icon--stroke circle,
+.icon--stroke ellipse,
+.icon--stroke polyline,
+.icon--stroke polygon {
+  stroke: currentColor;
 }
 /*# sourceMappingURL=bootstrap.css.map */
