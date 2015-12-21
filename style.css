@@ -1534,8 +1534,14 @@ address {
 .word-spacing {
   word-spacing: 5px;
 }
-fz-large {
+.fz-medium {
   font-size: 20px;
+}
+.fz-large {
+  font-size: 26px;
+}
+.fz-xlarge {
+  font-size: 30px;
 }
 code,
 kbd,
@@ -4816,6 +4822,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
+.pagination--1 > li > a {
+  border: none;
+  color: #000;
+  background-color: transparent;
+  padding-left: 9px;
+  padding-right: 9px;
+  font-size: 16px;
+}
 .pager {
   padding-left: 0;
   margin: 20px 0;
@@ -6616,6 +6630,9 @@ button.close {
 .color-light {
   color: #fff;
 }
+.color-secondary {
+  color: #3ac6b1;
+}
 .color-gray-xlight {
   color: #8c8c8c;
 }
@@ -6627,6 +6644,12 @@ button.close {
 }
 .bg-primary-darken {
   background-color: #272c28;
+}
+.bg-secondary {
+  background-color: #3ac6b1;
+}
+.bg-gray {
+  background-color: #d9d9d9;
 }
 .width-100 {
   width: 100%;
