@@ -6705,6 +6705,9 @@ button.close {
 .no-border-radius {
   border-radius: 0px;
 }
+.border-bottom {
+  border-bottom: 2px solid #000;
+}
 .no-margin {
   margin: 0 !important;
 }
