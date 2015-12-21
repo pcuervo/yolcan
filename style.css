@@ -3462,6 +3462,12 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+.btn-secondary {
+  background-color: #3ac6b1;
+  color: #fff;
+  border-radius: 3px;
+  border: 0px;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
