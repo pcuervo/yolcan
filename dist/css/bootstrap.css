@@ -1517,6 +1517,15 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+.line-height {
+  line-height: 10px;
+}
+.letter-spacing--small {
+  letter-spacing: 1px;
+}
+.word-spacing {
+  word-spacing: 5px;
+}
 code,
 kbd,
 pre,
