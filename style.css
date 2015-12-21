@@ -6633,6 +6633,12 @@ button.close {
 .color-secondary {
   color: #3ac6b1;
 }
+.color-tertiary {
+  color: #f99134;
+}
+.color-quaternary {
+  color: #c4681c;
+}
 .color-gray-xlight {
   color: #8c8c8c;
 }
@@ -6650,6 +6656,9 @@ button.close {
 }
 .bg-gray {
   background-color: #d9d9d9;
+}
+.bg-gray-dark {
+  background-color: #8c8c8c;
 }
 .width-100 {
   width: 100%;
