@@ -5261,6 +5261,14 @@ a.thumbnail.active {
     height: 200px;
   }
 }
+.width-logo {
+  width: 180px;
+}
+@media (min-width: 768px) {
+  .width-logo {
+    width: 200px;
+  }
+}
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
@@ -6794,6 +6802,10 @@ button.close {
 }
 .margin-top--xlarge {
   margin-top: 80px;
+}
+.margin-top-bottom {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .margin-top-bottom--large {
   margin-top: 40px;
