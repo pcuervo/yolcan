@@ -5258,15 +5258,15 @@ a.thumbnail.active {
 }
 @media (min-width: 768px) {
   .rectangle {
-    height: 200px;
+    height: 300px;
   }
 }
-.width-logo {
-  width: 180px;
+.rectangle-small {
+  height: 200px;
 }
 @media (min-width: 768px) {
-  .width-logo {
-    width: 200px;
+  .rectangle-small {
+    height: 250px;
   }
 }
 .list-group {
@@ -6543,6 +6543,15 @@ button.close {
   margin-left: auto;
   margin-right: auto;
 }
+.center-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 .pull-right {
   float: right !important;
 }
@@ -7160,5 +7169,16 @@ icon {
 .icon--stroke polyline,
 .icon--stroke polygon {
   stroke: currentColor;
+}
+header {
+  border-bottom: solid 3px #272c28;
+}
+.width-logo {
+  width: 180px;
+}
+@media (min-width: 768px) {
+  .width-logo {
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
