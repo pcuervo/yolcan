@@ -5223,6 +5223,19 @@ a.thumbnail.active {
   padding-left: 0;
   list-style: none;
 }
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.rectangle {
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .rectangle {
+    height: 200px;
+  }
+}
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
