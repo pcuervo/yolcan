@@ -6725,6 +6725,9 @@ button.close {
 .width-100 {
   width: 100%;
 }
+.width-90 {
+  width: 90%;
+}
 .no-padding {
   padding: 0 !important;
 }
