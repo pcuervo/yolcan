@@ -4236,10 +4236,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .dropdown-nav {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
   margin-top: 25px;
-  position: relative;
-  z-index: 13;
+  font-size: 22px;
+  text-align: center;
+  padding: 5px 70px;
 }
 .navbar {
   position: relative;
@@ -6738,6 +6739,9 @@ button.close {
 .width-90 {
   width: 90%;
 }
+.width-70 {
+  width: 70%;
+}
 .no-padding {
   padding: 0 !important;
 }
@@ -6874,6 +6878,21 @@ button.close {
 }
 .border-bottom {
   border-bottom: 2px solid #000;
+}
+.border-bottom--orange {
+  border-bottom: 5px solid #ec7d0f;
+}
+.border-bottom--green {
+  border-bottom: 5px solid #8db02f;
+}
+.border-bottom--blue {
+  border-bottom: 5px solid #3075a6;
+}
+.border-bottom--pink {
+  border-bottom: 5px solid #b14464;
+}
+.border-bottom--secondary {
+  border-bottom: 5px solid #3ac6b1;
 }
 .no-margin {
   margin: 0 !important;
