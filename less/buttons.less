@@ -87,14 +87,6 @@
 }
 
 
-.btn-secondary{
-  background-color: @secondary;
-  color: @light;
-  border-radius: 3px;
-  border: 0px;
-  margin-left: (@margin-base/4); margin-right: (@margin-base/4);
-  .btn-box-shadow;
-}
 
 .btn-primary-darken{
   background-color: @primary-darken;
@@ -103,6 +95,31 @@
   border: 0px;
   margin-left: (@margin-base/4); margin-right: (@margin-base/4);
   .btn-box-shadow;
+    &:hover,
+    &:focus,
+    &.focus {
+    color: @light;
+    background-color: darken(@primary-darken, 5%);
+    text-decoration: none;
+    .transition(@transition: all 0.3s ease );
+  }
+}
+
+.btn-secondary{
+  background-color: @secondary;
+  color: @light;
+  border-radius: 3px;
+  border: 0px;
+  margin-left: (@margin-base/4); margin-right: (@margin-base/4);
+  .btn-box-shadow;
+   &:hover,
+    &:focus,
+    &.focus {
+    color: @light;
+    background-color: darken(@secondary, 10%);
+    text-decoration: none;
+    .transition(@transition: all 0.3s ease );
+  }
 }
 
 

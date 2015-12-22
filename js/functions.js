@@ -1,4 +1,4 @@
-unction imgToSvg(){
+function imgToSvg(){
     $('img.svg').each(function(){
         var $img = $(this);
         var imgID = $img.attr('id');

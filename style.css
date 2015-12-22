@@ -1280,6 +1280,7 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  font-size: 14px;
 }
 .lead {
   margin-bottom: 20px;
@@ -1542,6 +1543,11 @@ address {
 }
 .fz-xlarge {
   font-size: 30px;
+}
+body {
+  font-family: "bree-serif", sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 code,
 kbd,
@@ -3414,6 +3420,27 @@ fieldset[disabled] .btn-danger.focus {
   color: #d9534f;
   background-color: #fff;
 }
+.btn-primary-darken {
+  background-color: #272c28;
+  color: #fff;
+  border-radius: 3px;
+  border: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+}
+.btn-primary-darken:hover,
+.btn-primary-darken:focus,
+.btn-primary-darken.focus {
+  color: #fff;
+  background-color: #1b1e1c;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
 .btn-secondary {
   background-color: #3ac6b1;
   color: #fff;
@@ -3423,14 +3450,17 @@ fieldset[disabled] .btn-danger.focus {
   margin-right: 5px;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
 }
-.btn-primary-darken {
-  background-color: #272c28;
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus {
   color: #fff;
-  border-radius: 3px;
-  border: 0px;
-  margin-left: 5px;
-  margin-right: 5px;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  background-color: #2e9f8e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 .btn-link {
   color: #337ab7;
