@@ -3028,6 +3028,9 @@ select[multiple].input-lg {
     font-size: 12px;
   }
 }
+.checkbox-secondary input {
+  border: 1px solid #3ac6b1;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -4242,6 +4245,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 22px;
   text-align: center;
   padding: 5px 70px;
+}
+.dropdown-select {
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  border-bottom: 1px solid #3ac6b1;
+  top: inherit;
+  margin-top: -1px;
 }
 .navbar {
   position: relative;
@@ -6812,6 +6824,10 @@ button.close {
   padding-top: 6px;
   padding-bottom: 6px;
 }
+.padding--top-bottom--xsmall {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 .padding--top-bottom--large {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -7085,6 +7101,18 @@ button.close {
 .grid-item--height8 {
   height: 520px;
 }
+.box-hover {
+  color: #fff;
+  padding: 8px 2px;
+  text-decoration: none;
+}
+.box-hover:hover,
+.box-hover:focus,
+.box-hover.active {
+  color: #3ac6b1;
+  background-color: #fff;
+  text-decoration: none;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -7318,6 +7346,10 @@ icon {
 .icon--responsive {
   width: 100%;
   height: auto;
+}
+.icon--iconed--small {
+  width: 10px !important;
+  height: 10px;
 }
 .icon--iconed {
   width: 20px !important;

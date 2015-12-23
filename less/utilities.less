@@ -138,6 +138,7 @@
 .no-padding--top-bottom{ padding-top: 0; padding-bottom: 0; }
 .padding--top-bottom{ padding-top: (@padding-base-vertical*2); padding-bottom: (@padding-base-vertical*2); }
 .padding--top-bottom--small{ padding-top: (@padding-base-vertical); padding-bottom: (@padding-base-vertical); }
+.padding--top-bottom--xsmall{ padding-top: (@padding-base-vertical/2); padding-bottom: (@padding-base-vertical/2); }
 .padding--top-bottom--large{ padding-top: (@padding-base-vertical*4); padding-bottom: (@padding-base-vertical*4); }
 .padding--top-bottom--xlarge{ padding-top: (@padding-base-vertical*6); padding-bottom: (@padding-base-vertical*6); }
 .padding--top-bottom--xxlarge{ padding-top: (@padding-base-vertical*8); padding-bottom: (@padding-base-vertical*8); }
@@ -272,3 +273,17 @@
 .grid-item--height6 { height: 400px; }
 .grid-item--height7 { height: 460px; }
 .grid-item--height8 { height: 520px; }
+
+
+.box-hover{
+  color: @light;
+  padding: 8px 2px;
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &.active{
+    color: @secondary;
+    background-color: @light;
+    text-decoration: none;
+  }
+}
