@@ -94,7 +94,9 @@
 			<div class="[ row ][ margin-top ]">
 				<!--	-->
 				<div class="[ col-xs-12 ]">
-					<iframe width="100%" height="180px" src="https://www.youtube.com/embed/HCj_EUKAis4" frameborder="0" allowfullscreen></iframe>
+					<div class="[ js-video-wrapper ]">
+						<iframe class="[ embed-responsive-item ]" src="https://www.youtube.com/embed/HCj_EUKAis4" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
 				<h1 class="[ text-center ]"><i>Calidad de origen chinampero</i></h1>
 				<div class="[ bg-image rectangle ][ padding ][ color-light text-shadow ]" style="background-image: url('img/IMG_1023.jpg');">
@@ -209,7 +211,7 @@
 				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/email.svg">
 				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
 				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
-				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/instagram.svg">
+				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
 			</div>
 			<h3><em>Únete</em></h3>
 			<div class="[ margin-bottom ]">
@@ -234,13 +236,14 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<!--<script src="js/plugins.js"></script>-->
 		<script src="js/functions.js"></script>
+		<script src="js/plugins.js"></script>
 		<script>
 			$( document ).ready(function() {
 				/**
 				 * On ready
 				**/
 				imgToSvg();
-
+				$('.js-video-wrapper').fitVids();
 				/**
 				 * Triggered events
 				**/
