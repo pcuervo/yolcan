@@ -4238,7 +4238,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .dropdown-nav {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  margin-top: 25px;
   font-size: 22px;
   text-align: center;
   padding: 5px 70px;
@@ -6662,11 +6661,17 @@ button.close {
 .absolute {
   position: absolute;
 }
+.inherit {
+  position: inherit;
+}
 .fixed {
   position: fixed;
 }
 .static {
   position: static;
+}
+.right-0 {
+  right: 0;
 }
 .z-index--1 {
   z-index: 1;
@@ -6733,6 +6738,9 @@ button.close {
 }
 .bg-gray-dark {
   background-color: #8c8c8c;
+}
+.width-auto {
+  width: auto;
 }
 .width-100 {
   width: 100%;
