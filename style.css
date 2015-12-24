@@ -1163,6 +1163,12 @@ hr {
 [role="button"] {
   cursor: pointer;
 }
+@font-face {
+  font-family: 'GothamHTF-Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('GothamHTF-Book'), url('GothamHTF-Book.woff') format('woff');
+}
 h1,
 h2,
 h3,
@@ -1175,8 +1181,9 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
-  font-weight: 500;
+  font-family: 'GothamHTF-Book', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   line-height: 1.1;
   color: inherit;
 }
@@ -3032,6 +3039,8 @@ select[multiple].input-lg {
   border: 1px solid #3ac6b1;
 }
 .btn {
+  font-family: 'GothamHTF-Book', sans-serif;
+  font-style: normal;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -7467,6 +7476,9 @@ icon {
   stroke: currentColor;
 }
 header {
+  font-family: 'GothamHTF-Book', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   height: 75px;
   position: relative;
   border-bottom: solid 3px #272c28;
