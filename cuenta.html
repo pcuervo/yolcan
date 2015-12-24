@@ -55,9 +55,12 @@
 			<div class=" [ container ] ">
 				<div class="[ row ]">
 					<div class="[ col-xs-8 ]">
-						<a href="index.html">
-							<img class="[ width-logo ]" src="img/yolcanlogo-vertical.png">
-						</a>
+						<h1 class="[ no-margin-top-bottom ]">
+							<a title="Yolcan" href="index.html" id="logo">
+								<span class="[ hidden ]">Yolcan</span>
+								<img class="[ width-logo ]" alt="Yolcan" src="img/yolcanlogo-vertical.png">
+							</a>
+						</h1>
 					</div>
 					<div class="[ col-xs-4 inherit ][ visible-xs ][ margin-top--small ][ text-right ]">
 						<div class="[ inline-block ]">
@@ -88,15 +91,18 @@
 				</div>
 			</div>
 		</header>
-		<section class="[ container ][ margin-bottom ]" >
-			<div class="[ row ][ border-bottom ]">
-				<div class="[ col-xs-4 ][ margin-top--small ]">
-					<img class="[ img-user img-responsive ]" src="img/user.png">
-				</div>
-				<div class="[ col-xs-8 ][ margin-bottom ]">
-					<h3>Daniela Morfín</h3>
-					<a href="#" class="[ underline ][ color-secondary ]">editar</a>
-					<a href="#" class="[ underline ][ color-secondary ]">salir</a>
+
+		<section class="[ container ]" >
+			<div class="[ margin-bottom ][ border-bottom ]">
+				<div class="[ row ]">
+					<div class="[ col-xs-4 ][ inline-block align-middle ][ margin-top--small ]">
+						<img class="[ img-user img-responsive ]" src="img/user.png">
+					</div>
+					<div class="[ col-xs-8 ][ inline-block align-middle ][ margin-bottom ]">
+						<h2><strong>Daniela Morfín</strong></h2>
+						<a href="#" class="[ underline ][ color-secondary ]"><em>editar</em></a>
+						<a href="#" class="[ underline ][ color-secondary ]"><em>salir</em></a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -117,7 +123,7 @@
 		</section>
 		<section class="[ container ][ margin-bottom ]">
 			<div class="[ border-bottom ]">
-				<p class="[ lead ]">Tu próxima canasta</p>
+				<p class="[ lead ]"><strong>Tu próxima canasta</strong></p>
 				<p>Media canasta para el 12 de mayo:</p>
 				<ul class="[ list-style-none ][ padding--left ]">
 					<li>Mix de ensalada</li>
@@ -129,66 +135,68 @@
 					<li>Zanahoria</li>
 				</ul>
 				<div class="[ margin-bottom ]">
-					<a href="#" class="[ underline ][ color-secondary ]">Consulta recetas con estos ingredientes</a>
+					<a href="#" class="[ underline ][ color-secondary ]"><em>Consulta recetas con estos ingredientes</em></a>
 				</div>
 			</div>
 		</section>
 		<section class="[ container ][ margin-bottom ]">
-			<p class="[ lead ]">Agrega productos</p>
+			<p class="[ lead ]"><strong>Agrega productos</strong></p>
 			<p>Selecciona los productos que deseas agregar a tu canasta:</p>
-			<div class="[ margin-bottom ]">
-				<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ]">+</a>
-				<p class="[ inline-block align-middle ][ no-margin ]">Huevo</p>
-			</div>
-			<p class="[ color-gray-xlight ]">Cantidad</p>
-			<div class="[ row ]">
-				<div class="[ col-xs-3 ]">
-					<input type="email" class="[ form-control no-border no-border-radius bg-gray ]">
+			<form>
+				<div class="[ margin-bottom ]">
+					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+					<p class="[ inline-block align-middle ][ no-margin ]">Huevo</p>
 				</div>
-				<div class="[ col-xs-5 no-padding--left no-padding--right ]">
-					<div class="[ radio ]">
-						<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-						Sólo esta ocasión
-						</label>
+				<p class="[ color-gray-xlight ]">Cantidad</p>
+				<div class="[ row ]">
+					<div class="[ col-xs-3 ]">
+						<input type="number" class="[ form-control no-border no-border-radius bg-gray ]">
 					</div>
-					<div class="[ radio ]">
-						<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						Cada semana
-						</label>
+					<div class="[ col-xs-5 no-padding--left no-padding--right ]">
+						<div class="[ radio ]">
+							<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							Sólo esta ocasión
+							</label>
+						</div>
+						<div class="[ radio ]">
+							<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							Cada semana
+							</label>
+						</div>
+						<div class="[ radio ]">
+							<label>
+							<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+							Cada 15 días
+							</label>
+						</div>
 					</div>
-					<div class="[ radio ]">
-						<label>
-						<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-						Cada 15 días
-						</label>
+					<div class="[ col-xs-4 padding--left--small ]">
+						<button type="submit" class="[ btn btn-secondary ][ margin-bottom ]">agregar</button>
 					</div>
 				</div>
-				<div class="[ col-xs-4 ]">
-					<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">agregar</a>
+				<div class="[ margin-bottom ]">
+					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+					<p class="[ inline-block align-middle ][ no-margin ]">Queso</p>
 				</div>
-			</div>
-			<div class="[ margin-bottom ]">
-				<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ]">+</a>
-				<p class="[ inline-block align-middle ][ no-margin ]">Queso</p>
-			</div>
-			<div class="[ margin-bottom ]">
-				<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ]">+</a>
-				<p class="[ inline-block align-middle ][ no-margin ]">Tortilla azul</p>
-			</div>
-			<div class="[ margin-bottom ]">
-				<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ]">+</a>
-				<p class="[ inline-block align-middle ][ no-margin ]">Tortilla blanca</p>
-			</div>
-			<div class="[ margin-bottom ]">
-				<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ]">+</a>
-				<p class="[ inline-block align-middle ][ no-margin ]">Café</p>
-			</div>
-			<div class="[ margin-bottom ]">
-				<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ]">+</a>
-				<p class="[ inline-block align-middle ][ no-margin ]">Miel de abeja</p>
-			</div>
+				<div class="[ margin-bottom ]">
+					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+					<p class="[ inline-block align-middle ][ no-margin ]">Tortilla azul</p>
+				</div>
+				<div class="[ margin-bottom ]">
+					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+					<p class="[ inline-block align-middle ][ no-margin ]">Tortilla blanca</p>
+				</div>
+				<div class="[ margin-bottom ]">
+					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+					<p class="[ inline-block align-middle ][ no-margin ]">Café</p>
+				</div>
+				<div class="[ margin-bottom ]">
+					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+					<p class="[ inline-block align-middle ][ no-margin ]">Miel de abeja</p>
+				</div>
+			</form>
 		</section>
 
 		<footer class="[ container ][ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">

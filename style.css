@@ -1285,6 +1285,11 @@ h6,
 .h6 {
   font-size: 12px;
 }
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
 p {
   margin: 0 0 10px;
   font-size: 14px;
@@ -4902,12 +4907,18 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-top-right-radius: 3px;
 }
 .pagination--1 > li > a {
+  font-family: 'GothamHTF-Book', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   border: none;
   color: #000;
   background-color: transparent;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: 6px;
+  padding-right: 6px;
   font-size: 16px;
+}
+.pagination--1 > li > a:hover {
+  background-color: #fff;
 }
 .pager {
   padding-left: 0;
@@ -6746,6 +6757,9 @@ button.close {
 .color-gray-xxlight {
   color: #d9d9d9;
 }
+.color-dark {
+  color: #000;
+}
 .bg-primary {
   background-color: #498D42;
 }
@@ -6976,6 +6990,10 @@ button.close {
 }
 .margin-top--xlarge {
   margin-top: 80px;
+}
+.no-margin-top-bottom {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .margin-top-bottom {
   margin-top: 20px;
@@ -7495,5 +7513,18 @@ header {
   .width-logo {
     width: 200px;
   }
+}
+#logo {
+  display: block;
+  height: 47px;
+  width: 180px;
+  overflow: hidden;
+  position: relative;
+}
+#logo img {
+  border: none;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 /*# sourceMappingURL=bootstrap.css.map */
