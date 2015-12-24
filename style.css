@@ -4253,7 +4253,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: rgba(255, 255, 255, 0.9);
   font-size: 22px;
   text-align: center;
-  padding: 5px 70px;
+  padding: 20px 50px;
 }
 .dropdown-select {
   width: 100%;
@@ -6928,6 +6928,9 @@ button.close {
 }
 .border-bottom--secondary {
   border-bottom: 5px solid #3ac6b1;
+}
+.border-bottom--primary {
+  border-bottom: 5px solid #498D42;
 }
 .border-bottom--secondary--small {
   border-bottom: 1px solid #3ac6b1;
