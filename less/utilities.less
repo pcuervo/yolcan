@@ -178,6 +178,8 @@
 .border-bottom--blue{ border-bottom: 5px solid #3075a6; }
 .border-bottom--pink{ border-bottom: 5px solid #b14464; }
 .border-bottom--secondary{ border-bottom: 5px solid @secondary; }
+.border-bottom--secondary--small{ border-bottom: 1px solid @secondary; }
+
 
 // Margin
 // -------------------------
@@ -276,14 +278,58 @@
 
 
 .box-hover{
+  text-align: center!important;
   color: @light;
-  padding: 8px 2px;
+  padding: 10px 1px;
   text-decoration: none;
+
   &:hover,
   &:focus,
+  &:visited,
+  &:active,
   &.active{
     color: @secondary;
     background-color: @light;
     text-decoration: none;
   }
+}
+.height-50{height: 50px;}
+
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.packery {
+  background: #FDD;
+  background: hsla(45, 100%, 40%, 0.2);
+}
+
+/* clearfix */
+.packery:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+  float: left;
+  background: #C09;
+  border: 4px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.3);
+}
+
+.item.w2 { width:  160px; background: #9C0; }
+.item.h2 { height: 160px; background: #0C9; }
+.item.h4 { height: 320px; background: #C90; }
+.item.w4 { width:  320px; background: #90C; }
+
+button {
+  font-size: 24px;
 }
