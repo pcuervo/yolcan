@@ -7059,81 +7059,6 @@ button.close {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* ---- grid ---- */
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-/* ---- .element-item ---- */
-.grid-item {
-  position: relative;
-  float: left;
-  width: 100;
-  height: 100px;
-  padding: 15px;
-  border: 1px solid black;
-}
-.grid-item--width2 {
-  width: 120px;
-}
-.grid-item--width3 {
-  width: 140px;
-}
-.grid-item--width4 {
-  width: 160px;
-}
-.grid-item--width5 {
-  width: 280px;
-}
-.grid-item--width6 {
-  width: 300px;
-}
-.grid-item--width7 {
-  width: 320px;
-}
-.grid-item--width8 {
-  width: 340px;
-}
-.grid-item--width9 {
-  width: 360px;
-}
-.grid-item--width10 {
-  width: 83.33%;
-}
-.grid-item--width11 {
-  width: 91.66%;
-}
-.grid-item--width12 {
-  width: 100%;
-}
-.grid-item--height2 {
-  height: 160px;
-}
-.grid-item--height3 {
-  height: 220px;
-}
-.grid-item--height4 {
-  height: 280px;
-}
-.grid-item--height5 {
-  height: 340px;
-}
-.grid-item--height6 {
-  height: 400px;
-}
-.grid-item--height7 {
-  height: 460px;
-}
-.grid-item--height8 {
-  height: 520px;
-}
 .box-hover {
   text-align: center!important;
   color: #fff;
@@ -7157,42 +7082,34 @@ button.close {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.packery {
-  background: #FDD;
-  background: rgba(204, 153, 0, 0.2);
+body {
+  font-family: sans-serif;
 }
-/* clearfix */
-.packery:after {
-  content: ' ';
+/* ---- grid ---- */
+.grid {
+  background: #DDD;
+  max-width: 1200px;
+}
+/* clear fix */
+.grid:after {
+  content: '';
   display: block;
   clear: both;
 }
-.item {
-  width: 80px;
-  height: 80px;
+/* ---- .grid-item ---- */
+.grid-item {
   float: left;
-  background: #C09;
-  border: 4px solid #333;
-  border-color: rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 100px;
+  background: #0D8;
+  border: 2px solid #333;
+  border-color: rgba(0, 0, 0, 0.7);
 }
-.item.w2 {
-  width: 160px;
-  background: #9C0;
+.grid-item--width2 {
+  width: 200px;
 }
-.item.h2 {
-  height: 160px;
-  background: #0C9;
-}
-.item.h4 {
-  height: 320px;
-  background: #C90;
-}
-.item.w4 {
-  width: 320px;
-  background: #90C;
-}
-button {
-  font-size: 24px;
+.grid-item--height2 {
+  height: 200px;
 }
 @-ms-viewport {
   width: device-width;
