@@ -7509,11 +7509,6 @@ header {
 .width-logo {
   width: 180px;
 }
-@media (min-width: 768px) {
-  .width-logo {
-    width: 200px;
-  }
-}
 #logo {
   display: block;
   height: 47px;

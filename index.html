@@ -48,6 +48,11 @@
 		<!-- Typekit -->
 		<script src="https://use.typekit.net/upn0scl.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<!-- Chart.js -->
+		<script src="jquery-2.1.4.min.js"></script>
+		<script src="Chart.js"></script>
+
 	</head>
 
 	<body>
@@ -148,8 +153,11 @@
 					<h2>Consumir local</h2>
 					<p class="[ lead ]"><i>Comprando productos locales estas apoyando a los productorores de tu comunidad.</i></p>
 					<p> Los productos cultivaddos con métodos de agricultura intensiva son más baratos porque contienen químicos que dañarán tu salud y la de tu familia.</p>
-					<div class="text-center">
-						<img src="img/grafica.png">
+						<!-- Charts.js -->
+					<div class="[ text-center ][ margin-bottom ]">
+						<canvas id="mycanvas" width="200" height="200">
+					</div>
+					<div class="[ text-center ]">
 						<p class="[ color-tertiary ]">$46-Productos locales</p>
 						<p class="[ color-tertiary ]">$14-Macro tiendas</p>
 					</div>
@@ -249,7 +257,6 @@
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
-		<!--<script src="js/plugins.js"></script>-->
 		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
 		<script>
@@ -262,6 +269,28 @@
 				/**
 				 * Triggered events
 				**/
+
+				//Chart.js
+				var ctx = $("#mycanvas").get(0).getContext("2d");
+				//pie chart data
+				//sum of values = 360
+				var data = [
+					{
+						value: 14,
+						color: "#f99134",
+						highlight: "#c4681c",
+						label: "Consumo de macrotiendas"
+					},
+					{
+						value: 46,
+						color: "#c4681c",
+						highlight: "#f99134",
+						label: "Consumo local"
+					}
+				];
+				//draw
+				var piechart = new Chart(ctx).Pie(data);
+
 			});
 		</script>
 
