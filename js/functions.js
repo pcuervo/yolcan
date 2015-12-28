@@ -35,38 +35,13 @@ function imgToSvg(){
     #TOGGLE FUNCTIONS
 \*------------------------------------*/
 
-// external js: isotope.pkgd.js
+function init_masonry(){
+    var $container = $('#content');
 
-// function emptyVideo(){
-//     $grid.isotope({
-
-//         var $grid = $('.grid').isotope({
-//   // main isotope options
-//   itemSelector: '.grid-item',
-//   // set layoutMode
-//   layoutMode: 'cellsByRow',
-//   // options for cellsByRow layout mode
-//   cellsByRow: {
-//     columnWidth: 200,
-//     rowHeight: 150
-//   },
-//   // options for masonry layout mode
-//   masonry: {
-//     columnWidth: '.grid-sizer'
-//   }
-// });
-
-// $(document).ready( function() {
-
-//   $('.grid').isotope({
-//     itemSelector: '.grid-item',
-//     masonry: {
-//       columnWidth: 100
-//     }
-//   });
-
-// });
-
-
-//     });
-// };
+    $container.imagesLoaded( function(){
+        $container.masonry({
+          itemSelector: '.box-content',
+          isAnimated: true
+        });
+    });
+}

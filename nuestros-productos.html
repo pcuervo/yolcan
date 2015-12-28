@@ -127,8 +127,55 @@
 			<div class="[ col-xs-12 ][ text-center ]">
 				<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">únete</a>
 			</div>
-			<p class="[ fz-medium ][ text-center ]"><strong><em>Algunas frutas y verduras que puedes estar en tu canasta</em></strong></p>
+			<p class="[ fz-medium ][ text-center ][ margin-bottom ]"><strong><em>Algunas frutas y verduras que puedes estar en tu canasta</em></strong></p>
 			<!-- grid jQuery -->
+
+			<div id="content">
+				<div class="box-gutter"></div>
+				<div class="box-sizer"></div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/1.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipim sit eaque ad facilis.</p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/2.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipim sit eaque ad facilis.</p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/3.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet. Odio voluptate ratione iure, suscipit sed culpa porro eius.</p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/4.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptate ratione iure, suscipit sed culpa porro eius.</p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/5.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/6.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, illo dolore? Amet natus harum quo autem.</p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/7.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptatibus.</p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/8.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam porro in.</p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/9.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cupiditate, animi expedita nostrum. </p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/10.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga explicabo animi dolores saepe suscipit, illo est. </p>
+				</div>
+			</div>
+
+
 			<div class="[ col-xs-12 ][ text-center ][ margin-top-bottom--large ]">
 				<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">únete</a>
 			</div>
@@ -172,12 +219,15 @@
 			<p class="[ color-gray-xlight ]">Content copyright 2015. Yolcan. All right reserved.</p>
 		</footer>
 
-
-
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
-		<!--<script src="js/plugins.js"></script>-->
+		<script src="js/plugins.js"></script>
 		<script src="js/functions.js"></script>
+
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/imagesloaded.3.1.8.min.js"></script>
+		<script src="js/jquery.masonry.3.2.1.min.js"></script>
+
 		<script>
 			$( document ).ready(function() {
 				/**
@@ -188,6 +238,10 @@
 				/**
 				 * Triggered events
 				**/
+
+				//Init jQuery Masonry layout
+				init_masonry();
+
 			});
 		</script>
 	</body>
