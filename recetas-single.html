@@ -138,8 +138,26 @@
 				<li>Incorporar los betabeles a la mezcla y salpimentar al gusto.</li>
 			</ol>
 			<p class="[ fz-large ][ text-center ][ margin-top ]"><em><strong>Más recetas para ti</strong></em></p>
-			<!-- img jQuery -->
-
+			<div id="content">
+				<div class="box-gutter"></div>
+				<div class="box-sizer"></div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/1.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipim sit eaque ad facilis.</p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/6.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet. Odio voluptate ratione iure, suscipit sed culpa porro eius.</p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/7.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+				</div>
+				<div class="box-content">
+					<img alt="" src="img/recetas/9.jpg">
+					<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam porro in.</p>
+				</div>
+			</div>
 		</section>
 
 		<footer class="[ container ][ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">
@@ -186,6 +204,9 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/functions.js"></script>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/imagesloaded.3.1.8.min.js"></script>
+		<script src="js/jquery.masonry.3.2.1.min.js"></script>
 		<script>
 			$( document ).ready(function() {
 				/**
@@ -196,6 +217,9 @@
 				/**
 				 * Triggered events
 				**/
+
+				//Init jQuery Masonry layout
+				init_masonry();
 			});
 		</script>
 	</body>

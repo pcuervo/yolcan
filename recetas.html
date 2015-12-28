@@ -261,60 +261,50 @@
 				</form>
 			</div>
 		</section>
-
-
-		<section class="[ container ]">
-			<div class="[ row ]">
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/1.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/2.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
+		<div id="content">
+			<div class="box-gutter"></div>
+			<div class="box-sizer"></div>
+			<div class="box-content">
+				<img alt="" src="img/recetas/1.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipim sit eaque ad facilis.</p>
 			</div>
-			<div class="[ row ]">
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/3.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/4.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
+			<div class="box-content">
+				<img alt="" src="img/recetas/2.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipim sit eaque ad facilis.</p>
 			</div>
-			<div class="[ row ]">
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/5.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/6.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
+			<div class="box-content">
+				<img alt="" src="img/recetas/3.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet. Odio voluptate ratione iure, suscipit sed culpa porro eius.</p>
 			</div>
-			<div class="[ row ]">
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/7.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/8.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
+			<div class="box-content">
+				<img alt="" src="img/recetas/4.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptate ratione iure, suscipit sed culpa porro eius.</p>
 			</div>
-			<div class="[ row ]">
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/9.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
-				<div class="[ col-xs-6 ]">
-					<img class="[ img-responsive ]" src="img/recetas/10.jpg">
-					<p class="[ fz-medium ]">Nombre</p>
-				</div>
+			<div class="box-content">
+				<img alt="" src="img/recetas/5.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
 			</div>
-		</section>
+			<div class="box-content">
+				<img alt="" src="img/recetas/6.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, illo dolore? Amet natus harum quo autem.</p>
+			</div>
+			<div class="box-content">
+				<img alt="" src="img/recetas/7.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptatibus.</p>
+			</div>
+			<div class="box-content">
+				<img alt="" src="img/recetas/8.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam porro in.</p>
+			</div>
+			<div class="box-content">
+				<img alt="" src="img/recetas/9.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cupiditate, animi expedita nostrum. </p>
+			</div>
+			<div class="box-content">
+				<img alt="" src="img/recetas/10.jpg">
+				<p class="[ fz-medium ]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga explicabo animi dolores saepe suscipit, illo est. </p>
+			</div>
+		</div>
 		<section class="[ bg-gray ][ text-center ]">
 			<ul class="[ pagination pagination--1 ][ no-margin ]">
 				<li>
@@ -381,6 +371,10 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/functions.js"></script>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/imagesloaded.3.1.8.min.js"></script>
+		<script src="js/jquery.masonry.3.2.1.min.js"></script>
+
 		<script>
 			$( document ).ready(function() {
 				/**
@@ -391,6 +385,9 @@
 				/**
 				 * Triggered events
 				**/
+
+				//Init jQuery Masonry layout
+				init_masonry();
 			});
 		</script>
 	</body>
