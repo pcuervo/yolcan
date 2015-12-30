@@ -6739,6 +6739,9 @@ button.close {
 .color-primary {
   color: #498D42;
 }
+.color-primary-darken {
+  color: #272c28;
+}
 .color-light {
   color: #fff;
 }
@@ -6786,6 +6789,12 @@ button.close {
 }
 .width-70 {
   width: 70%;
+}
+.width-20 {
+  width: 20%;
+}
+.width-19 {
+  width: 19%;
 }
 .no-padding {
   padding: 0 !important;
@@ -7034,6 +7043,9 @@ button.close {
 }
 .margin-right--large {
   margin-right: 40px;
+}
+.margin-right--xlarge {
+  margin-right: 80px;
 }
 .margin-left {
   margin-left: 20px;
@@ -7430,5 +7442,10 @@ header {
   left: 0;
   position: absolute;
   top: 0;
+}
+.info-menu {
+  padding-left: 12px;
+  padding-right: 12px;
+  border-right: solid 1px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
