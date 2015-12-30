@@ -7000,6 +7000,9 @@ button.close {
 .margin-top--xlarge {
   margin-top: 80px;
 }
+.margin-top--xxlarge {
+  margin-top: 160px;
+}
 .no-margin-top-bottom {
   margin-top: 0;
   margin-bottom: 0;
@@ -7447,5 +7450,14 @@ header {
   padding-left: 12px;
   padding-right: 12px;
   border-right: solid 1px;
+}
+.info-menu:hover,
+.info-menu:focus {
+  color: #498D42;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 /*# sourceMappingURL=bootstrap.css.map */

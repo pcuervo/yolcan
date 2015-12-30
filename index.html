@@ -59,7 +59,7 @@
 		<header class="[ bg-light ]">
 			<div class=" [ container ] ">
 				<div class="[ row ]">
-					<div class="[ col-xs-8 ]">
+					<div class="[ col-xs-6 col-md-8 ]">
 						<h1 class="[ no-margin-top-bottom ]">
 							<a title="Yolcan" href="index.html" id="logo">
 								<span class="[ hidden ]">Yolcan</span>
@@ -67,7 +67,7 @@
 							</a>
 						</h1>
 					</div>		
-					<div class="[ col-xs-4 inherit ][ visible-xs ][ margin-top--small ][ text-right ]">
+					<div class="[ col-xs-6 inherit ][ visible-xs ][ margin-top--small ][ text-right ]">
 						<div class="[ inline-block ]">
 							<span class="[ dropdown-toggle ]" data-toggle="dropdown">
 								<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/infomation-circle.svg">
@@ -93,18 +93,17 @@
 						</div>
 					</div>
 					<!-- info-menu desktop -->
-					<div class="[ col-sm-4 ][ hidden-xs ][ margin-top--large ]">
+					<div class="[ col-sm-6 col-md-4 ][ hidden-xs ][ margin-top--large ]">
 						<a class="[ color-primary-darken ][ info-menu ]" href="#">tu cuenta</a>
 						<a class="[ color-primary-darken ][ info-menu ]" href="#">tu carrito</a>
 						<a class="[ color-primary-darken ][ info-menu ]" href="#">faq</a>
-						<a class="[ color-primary-darken ][ padding--sides--small ]" href="#">blog</a>
+						<a class="[ color-primary-darken ][ info-menu ]" href="#">blog</a>
 					</div>
 				</div>
 			</div> <!-- /container -->
 		</header>
 
 		<div class="[ container ]">
-
 			<!-- menu desktop -->
 			<div class="[ row ][ hidden-xs ][ margin-top ]" >
 				<div class="[ col-sm-12 ]">
@@ -143,7 +142,7 @@
 				<!-- banner	-->
 				<div class="[ col-sm-6 ][ bg-image rectangle ][ padding ][ color-light text-shadow ][ margin-top ]" style="background-image: url('img/IMG_1023.jpg');">
 					<h3>Canastas de verduras y frutas organicas a domicilio</h3>
-					<div class="[ text-center ]">
+					<div class="[ text-center ][ ]">
 						<a href="" ><button class="[ btn btn-secondary ]">únete</button></a>
 						<a href="" ><button class="[ btn btn-primary-darken ]">¿cómo funciona?</button></a>
 					</div>
@@ -173,25 +172,31 @@
 					</div>
 				</div>
 			</div>
+		</div> <!--/container-->		
 
-			<!-- Consumir local -->
-			<div class="[ row ][ bg-primary-darken ][ color-light ][ margin-top--large ]">
-				<div class="[ col-xs-12 ]">
-					<h2>Consumir local</h2>
-					<p class="[ lead ]"><i>Comprando productos locales estas apoyando a los productorores de tu comunidad.</i></p>
-				</div>
-				<p class="[ col-sm-4 ]"> Los productos cultivaddos con métodos de agricultura intensiva son más baratos porque contienen químicos que dañarán tu salud y la de tu familia.</p>
-				<!-- Charts.js -->
-				<div class="[ col-sm-2 ][ text-center ][ margin-bottom ]">
-					<canvas id="mycanvas" width="150%" height="150%"></canvas>
-				</div>
-				<div class="[ col-sm-2 ][ text-center ]">
-					<p class="[ color-tertiary ]">$46-Productos locales</p>
-					<p class="[ color-quaternary ]">$14-Macro tiendas</p>
-				</div>
-				<p class="[ col-sm-4 ][ margin-bottom--large ]">Por cada $100 pesos gastados en productos locales, $46 regresan a la comunidad mientras que del consumo de macrotiendas, solamente $14 pesos regresan a la misma.</p>
-			</div><!--/row-->
+		<!-- Consumir local -->
+		<div class="[ bg-primary-darken ][ margin-top--large ]">
+			<div class="[ container ]">
+				<div class="[ row ][ color-light ]">
+					<div class="[ col-xs-12 ]">
+						<h2>Consumir local</h2>
+						<p class="[ lead ]"><i>Comprando productos locales estas apoyando a los productorores de tu comunidad.</i></p>
+					</div>
+					<p class="[ col-sm-4 ]"> Los productos cultivaddos con métodos de agricultura intensiva son más baratos porque contienen químicos que dañarán tu salud y la de tu familia.</p>
+					<!-- Charts.js -->
+					<div class="[ col-sm-2 ][ text-center ][ margin-bottom ]">
+						<canvas id="mycanvas" width="150%" height="150%"></canvas>
+					</div>
+					<div class="[ col-sm-2 ][ text-center ]">
+						<p class="[ color-tertiary ]">$46-Productos locales</p>
+						<p class="[ color-quaternary ]">$14-Macro tiendas</p>
+					</div>
+					<p class="[ col-sm-4 ][ margin-bottom--large ]">Por cada $100 pesos gastados en productos locales, $46 regresan a la comunidad mientras que del consumo de macrotiendas, solamente $14 pesos regresan a la misma.</p>
+				</div><!--/row-->
+			</div>	
+		</div>
 
+		<div class="[ container ]">
 			<div class="row">
 				<div class="[ col-xs-12 ]">
 					<h2> Clubes de consumo</h2>
@@ -202,10 +207,10 @@
 					</div>
 					<div class="[  ][ hidden-xs ]">
 						<div class="[ text-center ]">
-							<a href="" ><button class="[ btn btn-secondary ][ margin-top-bottom ]">únete</button></a>
+							<a href="" ><button class="[ btn btn-secondary ][ margin-top-bottom padding ]">únete</button></a>
 						</div>
 						<p>Si quieres armar un nuevo club de consumo, haz
-							<a href=""><i><u>click aquí</u></i></a>
+							<a class="[ color-primary-darken ]" href=""><i><u>click aquí</u></i></a>
 						</p>
 					</div>
 				</div>
@@ -217,121 +222,142 @@
 						<a href="" ><button class="[ btn btn-secondary ][ margin-top-bottom ]">únete</button></a>
 					</div>
 					<p>Si quieres armar un nuevo club de consumo, haz
-						<a href=""><i><u>click aquí</u></i></a>
+						<a class="[ color-primary-darken ]" href=""><i><u>click aquí</u></i></a>
 					</p>
 				</div>
 			</div>
+		</div>
 
-			<div class="[ row ][ bg-secondary ][ color-light ][ margin-top padding-bottom--large ]">
-				<div class="[ col-xs-12 ][ margin-bottom ]">
-					<h2>Beneficios</h2>
-				</div>
-				<div class="[ col-xs-12  col-sm-3 ]">	
-					<div class="[ text-center ]">
-						<img class="[ margin-top ][ svg icon--stroke icon--iconed--xxxlarge icon--thickness-1 ][ color-light ]" src="icons/apple-1.svg">
-						<h3 class="[ no-margin ]"><i>Productos frescos</i></h3>
+		<!--Clubes de consumo-->
+		<div class="[ bg-secondary ][ margin-top ]">
+			<div class="[ container ]">
+				<div class="[ row ][ color-light ][ padding-bottom--large ]">
+					<div class="[ col-xs-12 ][ margin-bottom ]">
+						<h2>Beneficios</h2>
 					</div>
-					<p>Contamos con una frescura inigualable ya que nuestros productos pasan menos de 24 horas desde que se cosechan, hasta que llegan a su destino final.</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ][ margin-bottom ]">
-					<div class="[ text-center ]">
-						<img class="[ margin-top ][ svg icon--stroke icon--iconed--xxxlarge icon--thickness-1 ][ color-light ]" src="icons/salt-pepper.svg">
-						<h3 class="[ no-margin ]"><i>Sabor</i></h3>
+					<div class="[ col-xs-12  col-sm-3 ]">	
+						<div class="[ text-center ]">
+							<img class="[ margin-top ][ svg icon--stroke icon--iconed--xxxlarge icon--thickness-1 ][ color-light ]" src="icons/apple-1.svg">
+							<h3 class="[ no-margin ]"><i>Productos frescos</i></h3>
+						</div>
+						<p>Contamos con una frescura inigualable ya que nuestros productos pasan menos de 24 horas desde que se cosechan, hasta que llegan a su destino final.</p>
 					</div>
-					<p>El sabor auténtico es la calidad de primera debido a que utilizamos una muestra de sistemas tradicionales de cultivo, con técnicas de agricultura orgánica moderna.</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ][ margin-bottom ]">
-					<div class="[ text-center ]">
-						<img class="[ margin-top ][ svg icon--stroke icon--iconed--xxxlarge icon--thickness-1 ][ color-light ]" src="icons/color-contrast-off.svg">
-						<h3 class="[ no-margin ]"><i>Libres de químicos</i></h3>
+					<div class="[ col-xs-12 col-sm-3 ][ margin-bottom ]">
+						<div class="[ text-center ]">
+							<img class="[ margin-top ][ svg icon--stroke icon--iconed--xxxlarge icon--thickness-1 ][ color-light ]" src="icons/salt-pepper-.svg">
+							<h3 class="[ no-margin ]"><i>Sabor</i></h3>
+						</div>
+						<p>El sabor auténtico es la calidad de primera debido a que utilizamos una muestra de sistemas tradicionales de cultivo, con técnicas de agricultura orgánica moderna.</p>
 					</div>
-					<p>Contamos con una frescura inigualable ya que nuestros productos pasan menos de 24 horas desde que se cosechan, hasta que llegan a su destino final.</p>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ][ margin-bottom ]">
-					<div class="[ text-center ]">
-						<img class="[ margin-top ][ svg icon--stroke icon--iconed--xxxlarge icon--thickness-1 ][ color-light ]"src="icons/dining-set.svg">
-						<h3 class="[ no-margin ]"><i>Nutrición y Salud</i></h3>
+					<div class="[ col-xs-12 col-sm-3 ][ margin-bottom ]">
+						<div class="[ text-center ]">
+							<img class="[ margin-top ][ svg icon--stroke icon--iconed--xxxlarge icon--thickness-1 ][ color-light ]" src="icons/color-contrast-off.svg">
+							<h3 class="[ no-margin ]"><i>Libres de químicos</i></h3>
+						</div>
+						<p>Contamos con una frescura inigualable ya que nuestros productos pasan menos de 24 horas desde que se cosechan, hasta que llegan a su destino final.</p>
 					</div>
-					<p>Los alimentos naturales tienen un mayor valor nutritivo (mayores porcentajes de vitaminas y minerales) ya que se producen respetando los tiempos de crecimiento, lo cual permite sintetizar los nutrientes des suelo y los azúcares.</p>
+					<div class="[ col-xs-12 col-sm-3 ][ margin-bottom ]">
+						<div class="[ text-center ]">
+							<img class="[ margin-top ][ svg icon--stroke icon--iconed--xxxlarge icon--thickness-1 ][ color-light ]"src="icons/dining-set.svg">
+							<h3 class="[ no-margin ]"><i>Nutrición y Salud</i></h3>
+						</div>
+						<p>Los alimentos naturales tienen un mayor valor nutritivo (mayores porcentajes de vitaminas y minerales) ya que se producen respetando los tiempos de crecimiento, lo cual permite sintetizar los nutrientes des suelo y los azúcares.</p>
+					</div>
 				</div>
 			</div>
-
-		</div> <!--/container-->
-
-		<footer class="[ container ][ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">
-			<div class="[ row ]">
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3><em>Contacto</em></h3>
-					<!-- social-media movil-->
-					<div class="[ visible-xs ]">
-						<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/phone-5.svg">
-						<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-whatsapp.svg">
-						<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/email.svg">
-						<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
-						<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
-						<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
-					</div>
-					<!-- social-media desktop-->
-					<div class="[ hidden-xs ][ text-left ]">
-						<div class="[ margin-top ]">
+		</div>
+		
+		<footer class="[ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">
+			<div class="[ container ]">
+				<div class="[ row ]">
+					<div class="[ col-xs-12 col-sm-6 col-md-3 ]">
+						<h3><em>Contacto</em></h3>
+						<!-- social-media movil-->
+						<div class="[ visible-xs ]">
 							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/phone-5.svg">
-							<span class="padding--bottom">555555-5555</span>
-						</div>
-						<div class="[ margin-top ]">
 							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-whatsapp.svg">
-							<span>555555-5555</span>
-						</div>
-						<div class="[ margin-top ]">
 							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/email.svg">
-							<span>contacto@yolcan.com</span>
-						</div>
-						<div class="[ margin-top ]">
 							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
-							<span>/yolcan</span>
-						</div>
-						<div class="[ margin-top ]">
 							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
-							<span>@yolcan</span>
-						</div>
-						<div class="[ margin-top ]">
 							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
-							<span>@yolcan</span>
 						</div>
-					</div>	
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3><em>Únete</em></h3>
-					<div class="[ margin-bottom ]">
-						<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ]">registrate</a>
-						<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ][ margin-top ]">agenda una cita</a>
+						<!-- social-media desktop-->
+						<div class="[ hidden-xs ][ text-left ]">
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/phone-5.svg">
+								<span class="[ margin-left--small ]">555555-5555</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-whatsapp.svg">
+								<span class="[ margin-left--small ]">555555-5555</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/email.svg">
+								<span class="[ margin-left--small ]">contacto@yolcan.com</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
+								<span class="[ margin-left--small ]">/yolcan</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
+								<span class="[ margin-left--small ]">@yolcan</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
+								<span class="[ margin-left--small ]">@yolcan</span>
+							</div>
+						</div>	
 					</div>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3><em>Métodos de pago</em></h3>
-					<div class="[ row ]">
-						<div class="[ col-xs-4  ]">
-							<img class="[ icon icon--responsive ]" src="icons/visa.svg" alt="">
-						</div>
-						<div class="[ col-xs-4 ]">
-							<img class="[ icon icon--responsive ]" src="icons/paypal.svg" alt="">
-						</div>
-						<div class="[ col-xs-4 ]">
-							<img class="[ icon icon--responsive ]" src="icons/mastercard.svg" alt="">
+					<div class="[ col-xs-12 col-sm-6 col-md-3 ]">
+						<h3><em>Únete</em></h3>
+						<div class="[ margin-bottom ]">
+							<a href="#" class="[ inline-block align-middle ][ btn btn-secondary margin-top--small ]">registrate</a>
+							<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ][ margin-top--small ]">agenda una cita</a>
 						</div>
 					</div>
-				</div>
-				<div class="[ col-xs-12 col-sm-3 ]">
-					<h3><em>Newsletter</em></h3>
-					<p class="[ text-left ]">Recibe las últimas noticias y ofertas antes que nadie, déjanos tu correo.</p>
-					<form class="[ form-inline ][ margin-bottom ]">
-						<div class="[ form-group ]">
-							<input type="[ email ]" class="[ form-control ]" id="email">
-							<button type="submit" href="#" class="[ btn btn-secondary ]">suscribirme</button>
+					<div class="[ col-xs-12 col-sm-6 col-md-3 ]">
+						<h3><em>Métodos de pago</em></h3>
+						<div class="[ row ]">
+							<div class="[ col-xs-4  ]">
+								<img class="[ icon icon--responsive ]" src="icons/visa.svg" alt="">
+							</div>
+							<div class="[ col-xs-4 ]">
+								<img class="[ icon icon--responsive ]" src="icons/paypal.svg" alt="">
+							</div>
+							<div class="[ col-xs-4 ]">
+								<img class="[ icon icon--responsive ]" src="icons/mastercard.svg" alt="">
+							</div>
 						</div>
-					</form>
+					</div>
+					<div class="[ col-xs-12 col-sm-6 col-md-3 ]">
+						<h3><em>Newsletter</em></h3>
+						<div class="[ text-left ]">
+							<p>Recibe las últimas noticias y ofertas antes que nadie, déjanos tu correo.</p>
+							<form class="[ form-inline ][ margin-bottom ][ hidden-xs ]">
+								<div class="[ form-group ]">
+									<input type="text" class="[ form-control ]">
+									<button type="submit" href="#" class="[ btn btn-secondary ][ margin-top--small ]">suscribirme</button>
+								</div>
+							</form>
+						</div>
+						<!-- prueba input inline -->
+						<div class="[ visible-xs ]">
+							<div class="[ input-group ]">
+								<input type="text" class="[ form-control ][ input-search ][ no-border-radius ]">
+								<span class="[ input-group-btn ]">
+									<button class="[ input-search--button ][ btn-secondary padding--small ]" type="submit">
+										suscribirme
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-xs-12 ][ margin-top-bottom ]">
+						<p class="[ color-gray-xlight ]">Content copyright 2015. Yolcan. All right reserved.</p>
+					</div>
 				</div>
 			</div>
-			<p class="[ color-gray-xlight ]">Content copyright 2015. Yolcan. All right reserved.</p>
 		</footer>
 
 
