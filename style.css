@@ -1290,6 +1290,17 @@ h1 {
   padding: 0;
   font-size: 14px;
 }
+h2 {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+h2.xbold {
+  font-weight: 800;
+}
+h3 {
+  font-family: "bree-serif", sans-serif;
+}
 p {
   margin: 0 0 10px;
   font-size: 14px;
@@ -3044,8 +3055,9 @@ select[multiple].input-lg {
   border: 1px solid #3ac6b1;
 }
 .btn {
-  font-family: 'GothamHTF-Book', sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-style: normal;
+  font-weight: 400;
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -3650,7 +3662,9 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   clear: both;
-  font-weight: normal;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.42857143;
   color: #333333;
   white-space: nowrap;
@@ -7443,9 +7457,9 @@ icon {
   stroke: currentColor;
 }
 header {
-  font-family: 'GothamHTF-Book', sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   height: 75px;
   position: relative;
   border-bottom: solid 3px #272c28;
