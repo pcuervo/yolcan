@@ -1290,7 +1290,9 @@ h1 {
   padding: 0;
   font-size: 14px;
 }
-h2 {
+h2,
+h5,
+.name {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1305,15 +1307,21 @@ p {
   margin: 0 0 10px;
   font-size: 14px;
 }
+.fact {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+}
 .lead {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 23.8px;
   }
 }
 small,
@@ -3068,7 +3076,7 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 10px 12px;
+  padding: 10px 18px;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
@@ -7438,6 +7446,9 @@ icon {
 **/
 .icon--stroke {
   stroke-width: 1.5;
+}
+.icon--thickness-05 {
+  stroke-width: 0.5;
 }
 .icon--thickness-1 {
   stroke-width: 1;
