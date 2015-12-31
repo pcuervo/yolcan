@@ -51,18 +51,18 @@
 	</head>
 
 	<body>
-				<header class="[ bg-light ]">
+		<header class="[ bg-light ]">
 			<div class=" [ container ] ">
 				<div class="[ row ]">
-					<div class="[ col-xs-8 ]">
+					<div class="[ col-xs-6 col-md-8 ]">
 						<h1 class="[ no-margin-top-bottom ]">
 							<a title="Yolcan" href="index.html" id="logo">
 								<span class="[ hidden ]">Yolcan</span>
 								<img class="[ width-logo ]" alt="Yolcan" src="img/yolcanlogo-vertical.png">
 							</a>
 						</h1>
-					</div>
-					<div class="[ col-xs-4 inherit ][ visible-xs ][ margin-top--small ][ text-right ]">
+					</div>		
+					<div class="[ col-xs-6 inherit ][ visible-xs ][ margin-top--small ][ text-right ]">
 						<div class="[ inline-block ]">
 							<span class="[ dropdown-toggle ]" data-toggle="dropdown">
 								<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/infomation-circle.svg">
@@ -86,12 +86,39 @@
 								<li><a class="[ margin-bottom ][ text-uppercase ][ border-bottom--secondary ]" href="#"><strong>Contáctanos</strong></a></li>
 							</ul>
 						</div>
-
+					</div>
+					<!-- info-menu desktop -->
+					<div class="[ col-sm-6 col-md-4 ][ hidden-xs ][ margin-top--large ]">
+						<a class="[ color-primary-darken ][ info-menu ]" href="#">tu cuenta</a>
+						<a class="[ color-primary-darken ][ info-menu ]" href="#">tu carrito</a>
+						<a class="[ color-primary-darken ][ info-menu ]" href="#">faq</a>
+						<a class="[ color-primary-darken ][ info-menu ]" href="#">blog</a>
 					</div>
 				</div>
-			</div>
+			</div> <!-- /container -->
 		</header>
+
 		<section class="[ container ]" >
+			<!-- menu desktop -->
+			<div class="[ row ][ hidden-xs ][ margin-top ]" >
+				<div class="[ col-sm-12 ]">
+					<div class="[ width-19 ][ text-uppercase ][ border-bottom--orange ][ inline-block ]">
+						<a class="[ color-primary-darken ]" href="nuestros-productos.html"><strong>Productos</strong></a>
+					</div>
+					<div class="[ width-19 ][ text-uppercase ][ border-bottom--green ][ inline-block ]" >
+						<a class="[ color-primary-darken ]" href="conocenos.html"><strong>Conócenos</strong></a>
+					</div>
+					<div class="[ width-19 ][ text-uppercase ][ border-bottom--blue ][ inline-block ]">
+						<a class="[ color-primary-darken ]" href="recetas.html"><strong>Recetas</strong></a>
+					</div>
+					<div class="[ width-19 ][ text-uppercase ][ border-bottom--pink ][ inline-block ]" >
+						<a class="[ color-primary-darken ]" href="visitanos.html"><strong>Visitas</strong></a>
+					</div>
+					<div class="[ width-19 ][ text-uppercase ][ border-bottom--secondary ][ inline-block ]">
+						<a class="[ color-primary-darken ]" href="#"><strong>Contáctanos</strong></a>
+					</div>
+				</div>						
+			</div>
 			<h2><strong>Visitanos</strong></h2>
 			<p class="[ lead ][ margin-bottom--small ]">Vive la experiencia chinampera</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -170,42 +197,97 @@
 
 		</section>
 
-		<footer class="[ container ][ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">
-			<h3><em>Contacto</em></h3>
-			<div>
-				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/phone-5.svg">
-				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-whatsapp.svg">
-				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/email.svg">
-				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
-				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
-				<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
+		<footer class="[ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">
+			<div class="[ container ]">
+				<div class="[ row ]">
+					<div class="[ col-xs-12 col-sm-6 col-md-3 ]">
+						<h3><em>Contacto</em></h3>
+						<!-- social-media movil-->
+						<div class="[ visible-xs ]">
+							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/phone-5.svg">
+							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-whatsapp.svg">
+							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/email.svg">
+							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
+							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
+							<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
+						</div>
+						<!-- social-media desktop-->
+						<div class="[ hidden-xs ][ text-left ]">
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/phone-5.svg">
+								<span class="[ margin-left--small ]">555555-5555</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-whatsapp.svg">
+								<span class="[ margin-left--small ]">555555-5555</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/email.svg">
+								<span class="[ margin-left--small ]">contacto@yolcan.com</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
+								<span class="[ margin-left--small ]">/yolcan</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
+								<span class="[ margin-left--small ]">@yolcan</span>
+							</div>
+							<div>
+								<img class="[ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
+								<span class="[ margin-left--small ]">@yolcan</span>
+							</div>
+						</div>	
+					</div>
+					<div class="[ col-xs-12 col-sm-6 col-md-3 ]">
+						<h3><em>Únete</em></h3>
+						<div class="[ margin-bottom ]">
+							<a href="#" class="[ inline-block align-middle ][ btn btn-secondary margin-top--small ]">registrate</a>
+							<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ][ margin-top--small ]">agenda una cita</a>
+						</div>
+					</div>
+					<div class="[ col-xs-12 col-sm-6 col-md-3 ]">
+						<h3><em>Métodos de pago</em></h3>
+						<div class="[ row ]">
+							<div class="[ col-xs-4  ]">
+								<img class="[ icon icon--responsive ]" src="icons/visa.svg" alt="">
+							</div>
+							<div class="[ col-xs-4 ]">
+								<img class="[ icon icon--responsive ]" src="icons/paypal.svg" alt="">
+							</div>
+							<div class="[ col-xs-4 ]">
+								<img class="[ icon icon--responsive ]" src="icons/mastercard.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="[ col-xs-12 col-sm-6 col-md-3 ]">
+						<h3><em>Newsletter</em></h3>
+						<div class="[ text-left ]">
+							<p>Recibe las últimas noticias y ofertas antes que nadie, déjanos tu correo.</p>
+							<form class="[ form-inline ][ margin-bottom ][ hidden-xs hidden-sm ]">
+								<div class="[ form-group ]">
+									<input type="text" class="[ form-control ]">
+									<button type="submit" href="#" class="[ btn btn-secondary ][ margin-top--small ]">suscribirme</button>
+								</div>
+							</form>
+						</div>
+						<!-- prueba input inline -->
+						<div class="[ visible-xs visible-sm ]">
+							<div class="[ input-group ]">
+								<input type="text" class="[ form-control ][ input-search ][ no-border-radius ]">
+								<span class="[ input-group-btn ]">
+									<button class="[ input-search--button ][ btn btn-secondary ]" type="submit">
+										suscribirme
+									</button>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-xs-12 ][ margin-top-bottom ]">
+						<p class="[ color-gray-xlight ]">Content copyright 2015. Yolcan. All right reserved.</p>
+					</div>
+				</div>
 			</div>
-			<h3><em>Únete</em></h3>
-			<div class="[ margin-bottom ]">
-				<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ]">registrate</a>
-				<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ]">agenda una cita</a>
-			</div>
-			<h3><em>Métodos de pago</em></h3>
-			<div class="[ row ]">
-				<div class="[ col-xs-4 ]">
-					<img class="[ icon icon--responsive ]" src="icons/visa.svg" alt="">
-				</div>
-				<div class="[ col-xs-4 ]">
-					<img class="[ icon icon--responsive ]" src="icons/paypal.svg" alt="">
-				</div>
-				<div class="[ col-xs-4 ]">
-					<img class="[ icon icon--responsive ]" src="icons/mastercard.svg" alt="">
-				</div>
-			</div>
-			<h3><em>Newsletter</em></h3>
-			<p class="[ text-left ]">Recibe las últimas noticias y ofertas antes que nadie, déjanos tu correo.</p>
-			<form class="[ form-inline ][ margin-bottom ]">
-				<div class="[ form-group ]">
-					<input type="[ email ]" class="[ form-control ]" id="email">
-					<button type="submit" href="#" class="[ btn btn-secondary ]">suscribirme</button>
-				</div>
-			</form>
-			<p class="[ color-gray-xlight ]">Content copyright 2015. Yolcan. All right reserved.</p>
 		</footer>
 
 
