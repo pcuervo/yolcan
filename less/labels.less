@@ -62,3 +62,25 @@
 .label-danger {
   .label-variant(@label-danger-bg);
 }
+
+// Style label > input
+
+label.check {
+  cursor: pointer;
+  border: solid 2.5px @secondary;
+  background-color: @secondary;
+  width: 25px;
+  height: 25px;
+  .transition;
+}  
+
+label.check input {
+  position: absolute;
+  left: -9999px;
+}
+
+label.check.c_on {
+  background: none;
+}
+
+
