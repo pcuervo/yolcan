@@ -69,8 +69,8 @@
 
 label.check {
   cursor: pointer;
+  background: none;
   border: solid 2.5px @secondary;
-  background-color: @secondary;
   width: 25px;
   height: 25px;
   .transition;
@@ -81,17 +81,17 @@ label.check input {
   left: -9999px;
 }
 
-label.check.c_off {
-  background: none;
-}
+label.check.c_on {
+  background-color: @secondary;
+  }
 
 //// label input radio
 
 label.radio_option {
   cursor: pointer;
   border-radius: 100px;
-  border: solid 5px @secondary;
-  background-color: @secondary;
+  border: solid 5px @gray-xlight;
+  background-color: @gray-xxlight;
   width: 20px;
   .transition;
 }  
@@ -101,8 +101,8 @@ label.radio_option input {
   left: -9999px;
 }
 
-label.radio_option.r_off {
-  border: solid 5px @gray-xlight;
-  background-color: @gray-xxlight;
+label.radio_option.r_on {
+  border: solid 5px @secondary;
+  background-color: @secondary;
 }
 

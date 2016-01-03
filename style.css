@@ -5075,8 +5075,8 @@ a.label:focus {
 }
 label.check {
   cursor: pointer;
+  background: none;
   border: solid 2.5px #3ac6b1;
-  background-color: #3ac6b1;
   width: 25px;
   height: 25px;
   -webkit-transition: all 0.3s ease;
@@ -5088,14 +5088,14 @@ label.check input {
   position: absolute;
   left: -9999px;
 }
-label.check.c_off {
-  background: none;
+label.check.c_on {
+  background-color: #3ac6b1;
 }
 label.radio_option {
   cursor: pointer;
   border-radius: 100px;
-  border: solid 5px #3ac6b1;
-  background-color: #3ac6b1;
+  border: solid 5px #8c8c8c;
+  background-color: #d9d9d9;
   width: 20px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -5106,9 +5106,9 @@ label.radio_option input {
   position: absolute;
   left: -9999px;
 }
-label.radio_option.r_off {
-  border: solid 5px #8c8c8c;
-  background-color: #d9d9d9;
+label.radio_option.r_on {
+  border: solid 5px #3ac6b1;
+  background-color: #3ac6b1;
 }
 .badge {
   display: inline-block;
