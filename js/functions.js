@@ -47,7 +47,13 @@ function init_masonry(){
 }
 
 
-//
+/*------------------------------------*\
+
+\*------------------------------------*/
+
+
+// Customized check-box
+
 var input = document.querySelectorAll("label.check input");
 if(input !== null) {
   [].forEach.call(input, function(el) {
@@ -60,3 +66,19 @@ if(input !== null) {
     }, false);
   });
 }
+
+// Customized radio
+
+var input = document.querySelectorAll("label.radio input");
+if(input !== null) {
+  [].forEach.call(input, function(el) {
+    if(el.checked) {
+      el.parentNode.classList.add('r_on');
+    }
+    el.addEventListener("click", function(event) {
+      event.preventDefault();
+      el.parentNode.classList.toggle('r_on');
+    }, false);
+  });
+}
+
