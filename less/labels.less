@@ -65,6 +65,11 @@
 
 // Style label > input
 
+label.check input, 
+label.radio_option input {
+  .hidden;
+}
+
 // label input check-box
 
 label.check {
@@ -75,11 +80,6 @@ label.check {
   height: 25px;
   .transition;
 }  
-
-label.check input {
-  position: absolute;
-  left: -9999px;
-}
 
 label.check.c_on {
   background-color: @secondary;
@@ -94,15 +94,13 @@ label.radio_option {
   background-color: @gray-xxlight;
   width: 20px;
   .transition;
-}  
-
-label.radio_option input {
-  position: absolute;
-  left: -9999px;
-}
-
-label.radio_option.r_on {
-  border: solid 5px @secondary;
-  background-color: @secondary;
-}
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active,
+  &.active{
+    border: solid 5px @secondary;
+    background-color: @secondary;
+  }
+} 
 

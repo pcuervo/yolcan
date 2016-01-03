@@ -5073,6 +5073,10 @@ a.label:focus {
 .label-danger[href]:focus {
   background-color: #c9302c;
 }
+label.check input,
+label.radio_option input {
+  display: none !important;
+}
 label.check {
   cursor: pointer;
   background: none;
@@ -5083,10 +5087,6 @@ label.check {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-}
-label.check input {
-  position: absolute;
-  left: -9999px;
 }
 label.check.c_on {
   background-color: #3ac6b1;
@@ -5102,11 +5102,11 @@ label.radio_option {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-label.radio_option input {
-  position: absolute;
-  left: -9999px;
-}
-label.radio_option.r_on {
+label.radio_option:hover,
+label.radio_option:focus,
+label.radio_option:visited,
+label.radio_option:active,
+label.radio_option.active {
   border: solid 5px #3ac6b1;
   background-color: #3ac6b1;
 }
