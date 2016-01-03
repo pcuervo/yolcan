@@ -5088,8 +5088,27 @@ label.check input {
   position: absolute;
   left: -9999px;
 }
-label.check.c_on {
+label.check.c_off {
   background: none;
+}
+label.radio_option {
+  cursor: pointer;
+  border-radius: 100px;
+  border: solid 5px #3ac6b1;
+  background-color: #3ac6b1;
+  width: 20px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+label.radio_option input {
+  position: absolute;
+  left: -9999px;
+}
+label.radio_option.r_off {
+  border: solid 5px #8c8c8c;
+  background-color: #d9d9d9;
 }
 .badge {
   display: inline-block;
@@ -7541,8 +7560,8 @@ header {
   padding-left: 12px;
   padding-right: 12px;
   border-right: solid 1px;
-  font-size: 1.2em;
-  line-height: 3em;
+  font-size: 1em;
+  line-height: 4em;
 }
 .info-menu:hover,
 .info-menu:focus {

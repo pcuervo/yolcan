@@ -81,9 +81,28 @@ label.check input {
   left: -9999px;
 }
 
-label.check.c_on {
+label.check.c_off {
   background: none;
 }
 
 //// label input radio
+
+label.radio_option {
+  cursor: pointer;
+  border-radius: 100px;
+  border: solid 5px @secondary;
+  background-color: @secondary;
+  width: 20px;
+  .transition;
+}  
+
+label.radio_option input {
+  position: absolute;
+  left: -9999px;
+}
+
+label.radio_option.r_off {
+  border: solid 5px @gray-xlight;
+  background-color: @gray-xxlight;
+}
 

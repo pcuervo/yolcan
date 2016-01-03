@@ -58,26 +58,26 @@ var input = document.querySelectorAll("label.check input");
 if(input !== null) {
   [].forEach.call(input, function(el) {
     if(el.checked) {
-      el.parentNode.classList.add('c_on');
+      el.parentNode.classList.add('c_off');
     }
     el.addEventListener("click", function(event) {
       event.preventDefault();
-      el.parentNode.classList.toggle('c_on');
+      el.parentNode.classList.toggle('c_off');
     }, false);
   });
 }
 
 // Customized radio
 
-var input = document.querySelectorAll("label.radio input");
+var input = document.querySelectorAll("label.radio_option input");
 if(input !== null) {
   [].forEach.call(input, function(el) {
     if(el.checked) {
-      el.parentNode.classList.add('r_on');
+      el.parentNode.classList.add('r_off');
     }
     el.addEventListener("click", function(event) {
       event.preventDefault();
-      el.parentNode.classList.toggle('r_on');
+      el.parentNode.classList.toggle('r_off');
     }, false);
   });
 }
