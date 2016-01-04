@@ -6852,6 +6852,11 @@ button.close {
 .underline {
   text-decoration: underline;
 }
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .color-primary {
   color: #498D42;
 }
@@ -7426,7 +7431,7 @@ button.close {
     display: none !important;
   }
 }
-icon {
+.icon {
   display: inline-block;
   vertical-align: middle;
   margin-right: .2em;
@@ -7508,6 +7513,7 @@ icon {
 }
 .icon--stroke path,
 .icon--stroke line,
+.icon--stroke rect,
 .icon--stroke circle,
 .icon--stroke ellipse,
 .icon--stroke polyline,
