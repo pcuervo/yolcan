@@ -50,7 +50,7 @@ function init_masonry(){
 
 
 /*------------------------------------*\
-// Customized check-box
+    Customized check-box
 \*------------------------------------*/
 
 var input = document.querySelectorAll("label.check input");
