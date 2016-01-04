@@ -1296,7 +1296,8 @@ h5 {
   font-style: normal;
   font-weight: 700;
 }
-h3 {
+h3,
+h4 {
   font-family: "bree-serif", sans-serif;
 }
 p {
