@@ -7487,6 +7487,7 @@ button.close {
 **/
 .icon--fill path,
 .icon--fill line,
+.icon--fill rect,
 .icon--fill circle,
 .icon--fill ellipse,
 .icon--fill polyline,
