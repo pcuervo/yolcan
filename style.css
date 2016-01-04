@@ -5448,11 +5448,6 @@ a.thumbnail.active {
 .rectangle-small {
   height: 200px;
 }
-@media (min-width: 768px) {
-  .rectangle-small {
-    height: 250px;
-  }
-}
 .img-user {
   border-radius: 50%;
   margin: auto;
