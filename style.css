@@ -5073,7 +5073,8 @@ a.label:focus {
 .label-danger[href]:focus {
   background-color: #c9302c;
 }
-label.check input label.radio_option input {
+label.check input,
+input[type="radio"] {
   display: none !important;
 }
 label.check {
@@ -5089,27 +5090,6 @@ label.check {
 }
 label.check.c_on {
   background-color: #3ac6b1;
-}
-label.radio_option {
-  display: inline-block;
-  border-radius: 100px;
-  border: solid 5px #8c8c8c;
-  background-color: #d9d9d9;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-label.radio_option:checked {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  border: solid 5px #3ac6b1;
-  background-color: #3ac6b1;
-}
-input[type="radio"] {
-  display: none;
 }
 input[type="radio"] + label span {
   display: inline-block;
@@ -5129,6 +5109,9 @@ input[type="radio"]:checked + label span {
   border: solid 5px #3ac6b1;
   background-color: #3ac6b1;
 }
+/*------------------------------------*\
+    Customized radio-button
+\*------------------------------------*/
 .badge {
   display: inline-block;
   min-width: 10px;
