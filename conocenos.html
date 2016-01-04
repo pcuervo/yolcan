@@ -48,6 +48,11 @@
 		<!-- Typekit -->
 		<script src="https://use.typekit.net/upn0scl.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<!-- Chart.js -->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/Chart.js"></script>
+
 	</head>
 
 	<body>
@@ -58,7 +63,7 @@
 						<h1 class="[ no-margin-top-bottom ]">
 							<a title="Yolcan" href="index.html" id="logo">
 								<span class="[ hidden ]">Yolcan</span>
-								<img class="[ width-logo ]" alt="Yolcan" src="img/yolcanlogo-vertical.png">
+								<img class="[ width-logo ]" alt="Yolcan" src="img/logo.svg">
 							</a>
 						</h1>
 					</div>
@@ -127,56 +132,78 @@
 					</div>
 				</div>
 				<div class="[ row ][ margin-top ]">
-					<div class="[ col-xs-6 col-sm-2 ]">
+					<div class="[ col-xs-6 ]">
 						<img class="[ svg ][ icon icon--iconed--xxlarge icon--stroke ][ color-secondary ]" src="icons/sign-reuse.svg">
-						<h5 class="[ text-uppercase ]">Agricultura sustentable</h5>
+						<h5 class="[ text-uppercase text-semibold ]">Agricultura sustentable</h5>
 					</div>
-					<div class="[ col-xs-6 col-sm-2 ]">
+					<div class="[ col-xs-6 ]">
 						<img class="[ svg ][ icon icon--iconed--xxlarge icon--stroke icon--thickness-05 icon--fill ][ color-secondary ]" src="icons/network-cash.svg">
-						<h5 class="[ text-uppercase ]">Economía local</h5>
+						<h5 class="[ text-uppercase text-semibold ]">Economía local</h5>
 					</div>
-					<div class="[ col-xs-6 col-sm-2 ][ margin-top ]">
+				</div>
+				<div class="[ row ][ margin-top-bottom ]">
+					<div class="[ col-xs-6 ]">
 						<img class="[ svg ][ icon icon--iconed--xxlarge icon--stroke ][ color-secondary ]" src="icons/eco-tag.svg">
-						<h5 class="[ text-uppercase ]">Consumo ecológicamente responsable</h5>
+						<h5 class="[ text-uppercase text-semibold ]">Consumo ecológicamente responsable</h5>
 					</div>
-					<div class="[ col-xs-6 col-sm-2 ][ margin-top ]">
+					<div class="[ col-xs-6 ]">
 						<img class="[ svg ][ icon icon--iconed--xxlarge icon--stroke ][ color-secondary ]" src="icons/sign-recycle.svg">
-						<h5 class="[ text-uppercase ]">Rescate de la reserva de Cuemanco, Xochimilco </h5>
+						<h5 class="[ text-uppercase text-semibold ]">Rescate de la reserva de Cuemanco, Xochimilco</h5>
 					</div>
-					<div class="[ col-xs-10 col-xs-offset-1 col-sm-2 ][ margin-bottom ][ margin-top ]">
+				</div>
+				<div class="[ row ][ margin-bottom ]">
+					<div class="[ col-xs-10 col-xs-offset-1 ]">
 						<img class="[ svg ][ icon icon--iconed--xxlarge icon--stroke ][ color-secondary ]" src="icons/tool-gardening.svg">
-						<h5 class="[ text-uppercase ]">Comercio justo y apoyo a los agricultores locales</h5>
+						<h5 class="[ text-uppercase text-semibold ]">Comercio justo y apoyo a los agricultores locales</h5>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section class="[ container ][ text-center ]">
-			<img class="[ svg icon--iconed--xxxlarge icon--thickness-1 icon--stroke ][ color-secondary ]" src="icons/basket.svg">
-			<p class="[ text-left ]">Ofrecemos canastas con productos orgánicos de temporada. son frutas y verduras orgánicas, producidos por Yolcan y su red de pequeños productores.</p>
-			<div class="[ col-xs-12 ]">
-				<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">únete</a>
-			</div>
-			<p class="[ text-left ]">Ofrecemos canastas con productos orgánicos de temporada. son frutas y verduras orgánicas, producidos por Yolcan y su red de pequeños productores.</p>
-			<img class="[ svg icon--iconed--xxxlarge icon--thickness-1 icon--stoke ][ color-secondary ]" src="icons/chinampa.svg">
-			<div class="[ col-xs-12 ]">
-				<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">visítanos</a>
+			<div class="[ row ]">
+				<div class="[ col-xs-12 col-sm-4 col-sm-offset-2 ]">
+					<img class="[ svg icon--iconed--xxxlarge icon--thickness-1 icon--stroke ][ color-secondary ]" src="icons/basket.svg">
+					<p class="[ text-left ]">Ofrecemos canastas con productos orgánicos de temporada. son frutas y verduras orgánicas, producidos por Yolcan y su red de pequeños productores.</p>
+					<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">únete</a>
+				</div>
+				<div class="[ col-xs-12 col-sm-4 ]">
+					<img class="[ svg icon--iconed--xxxlarge icon--thickness-1 icon--stoke ][ color-secondary ]" src="icons/chinampa.svg">
+					<p class="[ text-left ]">Ofrecemos canastas con productos orgánicos de temporada. son frutas y verduras orgánicas, producidos por Yolcan y su red de pequeños productores.</p>
+					<div class="[ col-xs-12 ]">
+						<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">visítanos</a>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="[ container ][ bg-primary-darken ][ color-gray-xxlight ][ margin-bottom ][ padding--bottom--large ]">
-			<h2>Consumir local</h2>
-			<p>En <span class="[ text-uppercase ]">Yolcan</span> somos partidarios del comercio local, ya que se beneficia la economía de la comunidad, se generan empleos y se reactiva la actividad agrícola en el distrito Federal.</p>
-			<div class="[ text-center ][ margin-top-bottom ]">
-				<img src="img/grafica.png">
+
+		<!-- Consumir local -->
+		<div class="[ bg-primary-darken ][ margin-top--large ]">
+			<div class="[ container ]">
+				<div class="[ row ][ color-light ]">
+					<div class="[ col-xs-12 ]">
+						<h2>Consumir local</h2>
+						<p>En <span class="[ text-uppercase ]">Yolcan</span> somos partidarios del comercio local, ya que se beneficia la economía de la comunidad, se generan empleos y se reactiva la actividad agrícola en el distrito Federal.</p>
+					</div>
+					<p class="[ col-sm-4 ]"> Los productos cultivaddos con métodos de agricultura intensiva son más baratos porque contienen químicos que dañarán tu salud y la de tu familia.</p>
+					<!-- Charts.js -->
+					<div class="[ col-sm-2 ][ text-center ][ margin-bottom ]">
+						<canvas id="mycanvas" width="150%" height="150%"></canvas>
+					</div>
+					<div class="[ col-sm-2 ][ text-center ]">
+						<p class="[ color-tertiary ][ fz-medium ]">$46-Productos locales</p>
+						<p class="[ color-quaternary ][ fz-medium ]">$14-Macro tiendas</p>
+					</div>
+					<div class="[ col-xs-12 ] ">
+						<ul class="[ no-padding--left ][ list-inside ]">
+							<li class="[ margin-bottom ]">Comprando productos locales estás apoyando a los productores de tu comunidad.</li>
+							<li class="[ margin-bottom ]">Los productos cultivados cin étodos de agricultura intensiva son más baratos, pero contienen químicos que dañarán tu salud y la de tu familia</li>
+							<li>Estudios revelan que por cada $1oo pesos gastados en productos locales, $46 regresan a la comunidad, mientras que del consumo de macro tiendas, solamente $14 pesos regresan a la misma.</li>
+						</ul>
+					</div>
+				</div><!--/row-->
 			</div>
-			<p class="[ text-center ][ color-tertiary ]"><strong>$46 - Productos locales</strong></p>
-			<p class="[ text-center ][ margin-bottom ][ color-quaternary ]">$14 - Macro tiendas</p>
-			<ul class="[ no-padding--left ][ list-inside ]">
-				<li class="[ margin-bottom ]">Comprando productos locales estás apoyando a los productores de tu comunidad.</li>
-				<li class="[ margin-bottom ]">Los productos cultivados cin étodos de agricultura intensiva son más baratos, pero contienen químicos que dañarán tu salud y la de tu familia</li>
-				<li>Estudios revelan que por cada $1oo pesos gastados en productos locales, $46 regresan a la comunidad, mientras que del consumo de macro tiendas, solamente $14 pesos regresan a la misma.</li>
-			</ul>
-		</section>
+		</div>
 
 		<footer class="[ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">
 			<div class="[ container ]">
@@ -276,6 +303,28 @@
 				/**
 				 * Triggered events
 				**/
+
+				//Chart.js
+				var ctx = $("#mycanvas").get(0).getContext("2d");
+				//pie chart data
+				//sum of values = 360
+				var data = [
+					{
+						value: 14,
+						color: "#f99134",
+						highlight: "#f96234",
+						label: "Macrotiendas"
+					},
+					{
+						value: 46,
+						color: "#c4681c",
+						highlight: "#c4471c",
+						label: "Consumo local"
+					}
+				];
+				//draw
+				var piechart = new Chart(ctx).Pie(data);
+
 			});
 		</script>
 	</body>
