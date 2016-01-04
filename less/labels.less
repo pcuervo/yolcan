@@ -65,8 +65,8 @@
 
 // Style label > input
 
-label.check input, 
-label.radio_option input {
+label.check input
+label.radio_option input{
   .hidden;
 }
 
@@ -86,6 +86,24 @@ label.check.c_on {
   }
 
 //// label input radio
+
+label.radio_option{
+    display: inline-block;
+    border-radius: 100px;
+    border: solid 5px @gray-xlight;
+    background-color: @gray-xxlight;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor:pointer;
+    &:checked{
+    .transition;
+    border: solid 5px @secondary;
+    background-color: @secondary;
+  }
+}
+
+
 
 input[type="radio"]{ display: none; }
  
