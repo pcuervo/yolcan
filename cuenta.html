@@ -107,7 +107,7 @@
 				</nav>
 			</div> <!-- /container -->
 		</header>
-		
+
 		<section class="[ container ]" >
 			<div class="[ margin-bottom ][ border-bottom ]">
 				<div class="[ row ]">
@@ -160,53 +160,195 @@
 			<p>Selecciona los productos que deseas agregar a tu canasta:</p>
 			<form>
 				<div class="[ margin-bottom ]">
-					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
-					<p class="[ inline-block align-middle ][ no-margin ]">Huevo</p>
-				</div>
-				<p class="[ color-gray-xlight ]">Cantidad</p>
-				<div class="[ row ]">
-					<div class="[ col-xs-3 ]">
-						<input class="[ width-90 ][ form-control no-border no-border-radius bg-gray ]">
-					</div>
-					<div class="[ col-xs-5 no-padding ]">
+					<a data-toggle="collapse" href="#huevo" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Huevo</p>
+					</a>
+					<div id="huevo" class="[ panel-collapse collapse in ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
 
-						<div class="">
-							<input type="radio" id="option1" name="cc">
-							<label for="option1"><span class="[ margin-right--small ]"></span> Sólo esta ocación</label>
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
 						</div>
-						<div class="">
-							<input type="radio" id="option2" name="cc">
-							<label for="option2"><span class="[ margin-right--small ]"></span> Cada semana</label>
-						</div>
-						<div class="">
-							<input type="radio" id="option3" name="cc">
-							<label for="option3"><span class="[ margin-right--small ]"></span>Cada 15 días</label>
-						</div>
+					</div>
+				</div>
+				<div class="[ margin-bottom ]">
+					<a data-toggle="collapse" href="#queso" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Queso</p>
+					</a>
+					<div id="queso" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
 
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
 					</div>
-					<div class="[ col-xs-4 padding--left--small ]">
-						<button type="submit" class="[ btn btn-secondary ][ margin-bottom ]">agregar</button>
+				</div>
+				<div class="[ margin-bottom ]">
+					<a data-toggle="collapse" href="#tortilla-azul" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Tortilla azul</p>
+					</a>
+					<div id="tortilla-azul" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="[ margin-bottom ]">
-					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
-					<p class="[ inline-block align-middle ][ no-margin ]">Queso</p>
+					<a data-toggle="collapse" href="#tortilla-blanca" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Tortilla blanca</p>
+					</a>
+					<div id="tortilla-blanca" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="[ margin-bottom ]">
-					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
-					<p class="[ inline-block align-middle ][ no-margin ]">Tortilla azul</p>
+					<a data-toggle="collapse" href="#cafe" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Café</p>
+					</a>
+					<div id="cafe" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="[ margin-bottom ]">
-					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
-					<p class="[ inline-block align-middle ][ no-margin ]">Tortilla blanca</p>
-				</div>
-				<div class="[ margin-bottom ]">
-					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
-					<p class="[ inline-block align-middle ][ no-margin ]">Café</p>
-				</div>
-				<div class="[ margin-bottom ]">
-					<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
-					<p class="[ inline-block align-middle ][ no-margin ]">Miel de abeja</p>
+					<a data-toggle="collapse" href="#miel" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Miel de abeja</p>
+					</a>
+					<div id="miel" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</form>
 		</section>
@@ -242,7 +384,7 @@
 								<img class="[ align-bottom ][ svg icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
 								<span class="[ hidden-xs ][ margin-left--small ]">@yolcan</span>
 							</span>
-						</div>	
+						</div>
 					</div>
 					<div class="[ col-xs-12 col-sm-6 col-md-3 ]">
 						<h3><em>Únete</em></h3>
@@ -294,7 +436,7 @@
 				</div>
 			</div>
 		</footer>
-		
+
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
 		<!--<script src="js/plugins.js"></script>-->
