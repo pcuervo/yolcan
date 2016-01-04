@@ -5091,6 +5091,13 @@ label.check {
 label.check.c_on {
   background-color: #3ac6b1;
 }
+input .radio-secondary {
+  background-color: blue;
+  border-bottom: yellow 2px solid;
+  border-left: yellow 2px solid;
+  border-right: yellow 2px solid;
+  border-top: yellow 2px solid;
+}
 .badge {
   display: inline-block;
   min-width: 10px;
