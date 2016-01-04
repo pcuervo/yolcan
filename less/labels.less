@@ -66,7 +66,7 @@
 // Style label > input
 
 label.check input,
-label.radio_option input {
+input[type="radio"]{
   .hidden;
 }
 
@@ -85,31 +85,22 @@ label.check.c_on {
   background-color: @secondary;
   }
 
-// label input radio
+//// label input radio
 
-// input[type="radio"]{ display: none; }
-
-// input[type="radio"] + label{
-//     display: inline-block;
-//     border-radius: 100px;
-//     border: solid 5px @gray-xlight;
-//     background-color: @gray-xxlight;
-//     width: 20px;
-//     height: 20px;
-//     vertical-align: middle;
-//     cursor:pointer;
-// }
-
-// input[type="radio"]:checked + label{
-//     .transition;
-//     border: solid 5px @secondary;
-//     background-color: @secondary;
-// }
-
-input .radio-secondary{
-background-color: blue;
-border-bottom: yellow 2px solid;
-border-left: yellow 2px solid;
-border-right: yellow 2px solid;
-border-top: yellow 2px solid;
+input[type="radio"] + label span{
+    display: inline-block;
+    border-radius: 100px;
+    border: solid 5px @gray-xlight;
+    background-color: @gray-xxlight;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor:pointer;
 }
+ 
+input[type="radio"]:checked + label span{
+    .transition;
+    border: solid 5px @secondary;
+    background-color: @secondary;
+}
+
