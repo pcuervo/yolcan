@@ -7199,7 +7199,6 @@ button.close {
 }
 .box-hover:hover,
 .box-hover:focus,
-.box-hover:visited,
 .box-hover:active,
 .box-hover.active {
   color: #3ac6b1;
