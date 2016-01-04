@@ -6961,6 +6961,9 @@ button.close {
 .padding--large {
   padding: 24px 48px;
 }
+.padding--xsmall {
+  padding: 6px;
+}
 .padding--top {
   padding-top: 12px;
 }
@@ -7193,6 +7196,9 @@ button.close {
 }
 .margin-right {
   margin-right: 20px;
+}
+.margin-right--xxsmall {
+  margin-right: 3.33333333px;
 }
 .margin-right--xsmall {
   margin-right: 5px;
