@@ -48,6 +48,11 @@
 		<!-- Typekit -->
 		<script src="https://use.typekit.net/upn0scl.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<!-- Chart.js -->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/Chart.js"></script>
+
 	</head>
 
 	<body>
@@ -163,19 +168,33 @@
 				<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">visítanos</a>
 			</div>
 		</section>
-		<section class="[ container ][ bg-primary-darken ][ color-gray-xxlight ][ margin-bottom ][ padding--bottom--large ]">
-			<h2>Consumir local</h2>
-			<p>En <span class="[ text-uppercase ]">Yolcan</span> somos partidarios del comercio local, ya que se beneficia la economía de la comunidad, se generan empleos y se reactiva la actividad agrícola en el distrito Federal.</p>
-			<div class="[ text-center ][ margin-top-bottom ]">
-				<img src="img/grafica.png">
+		<section class="[ bg-primary-darken ][ color-gray-xxlight ][ margin-bottom ][ padding--bottom--large ]">
+			<div class="[ container ]">
+				<h2>Consumir local</h2>
+				<p class="[ margin-bottom--large ]">En <span class="[ text-uppercase ]">Yolcan</span> somos partidarios del comercio local, ya que se beneficia la economía de la comunidad, se generan empleos y se reactiva la actividad agrícola en el distrito Federal.</p>
+				<div class="[ row ]">
+					<div class="[ col-sm-7 ][ text-center ][ margin-bottom ]">
+						<div class="[ margin-bottom ]">
+							<div class="[ inline-block ]">
+								<canvas id="mycanvas" width="195%" height="195%"></canvas>
+								<p class="[ color-tertiary ][ fz-medium ]">$46-Productos locales</p>
+							</div>
+							<div class="[ visible-xs ][ margin-bottom ]"></div>
+							<div class="[ inline-block ]">
+								<canvas id="mycanvas1" width="195%" height="195%" class="[ margin-left--small ]"></canvas>
+								<p class="[ color-quaternary ][ fz-medium ]">$14-Macro tiendas</p>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-sm-5 ]">
+						<ul class="[ no-padding--left ][ list-inside ]">
+							<li class="[ margin-bottom ]">Comprando productos locales estás apoyando a los productores de tu comunidad.</li>
+							<li class="[ margin-bottom ]">Los productos cultivados cin étodos de agricultura intensiva son más baratos, pero contienen químicos que dañarán tu salud y la de tu familia</li>
+							<li>Estudios revelan que por cada $1oo pesos gastados en productos locales, $46 regresan a la comunidad, mientras que del consumo de macro tiendas, solamente $14 pesos regresan a la misma.</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<p class="[ text-center ][ color-tertiary ]"><strong>$46 - Productos locales</strong></p>
-			<p class="[ text-center ][ margin-bottom ][ color-quaternary ]">$14 - Macro tiendas</p>
-			<ul class="[ no-padding--left ][ list-inside ]">
-				<li class="[ margin-bottom ]">Comprando productos locales estás apoyando a los productores de tu comunidad.</li>
-				<li class="[ margin-bottom ]">Los productos cultivados cin étodos de agricultura intensiva son más baratos, pero contienen químicos que dañarán tu salud y la de tu familia</li>
-				<li>Estudios revelan que por cada $1oo pesos gastados en productos locales, $46 regresan a la comunidad, mientras que del consumo de macro tiendas, solamente $14 pesos regresan a la misma.</li>
-			</ul>
 		</section>
 
 		<footer class="[ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">
@@ -276,6 +295,51 @@
 				/**
 				 * Triggered events
 				**/
+
+				//Chart.js
+
+				//#mycanvas
+				var ctx = $("#mycanvas").get(0).getContext("2d");
+				//pie chart data
+				//sum of values = 360
+				var data = [
+					{
+						value: 46,
+						color: "#f99134",
+						highlight: "#f96234",
+						label: "Local"
+					},
+					{
+						value: 54,
+						color: "#fff",
+						highlight: "#fff",
+						label: ""
+					}
+				];
+				//draw
+				var piechart = new Chart(ctx).Pie(data);
+
+				//#mycanvas1
+				var ctx = $("#mycanvas1").get(0).getContext("2d");
+				//pie chart data
+				//sum of values = 360
+				var data = [
+					{
+						value: 14,
+						color: "#c4681c",
+						highlight: "#c4681c",
+						label: "Macrotiendas"
+					},
+					{
+						value: 54,
+						color: "#fff",
+						highlight: "#fff",
+						label: ""
+					}
+				];
+				//draw
+				var piechart = new Chart(ctx).Pie(data);
+
 			});
 		</script>
 	</body>
