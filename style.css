@@ -5109,9 +5109,6 @@ input[type="radio"]:checked + label span {
   border: solid 5px #3ac6b1;
   background-color: #3ac6b1;
 }
-/*------------------------------------*\
-    Customized radio-button
-\*------------------------------------*/
 .badge {
   display: inline-block;
   min-width: 10px;
