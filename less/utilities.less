@@ -89,7 +89,6 @@
 // -------------------------
 .underline { text-decoration: underline;}
 
-
 // Color
 // -------------------------
 .color-primary          { color: @primary; }
@@ -121,6 +120,8 @@
 .width-30   { width: 30%;}
 .width-20   { width: 20%;}
 .width-19   { width: 19%;}
+
+.height-50{height: 50px;}
 
 // Padding
 // -------------------------
@@ -254,30 +255,4 @@
     background-color: @light;
     text-decoration: none;
   }
-}
-.height-50{height: 50px;}
-
-// Mansory
-
-.box-content img {
-    max-width: 100%;
-}
-
-#content .box-content {
-  width: 50%;
-  padding: 6px;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 12px;
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
-}
-
-@media screen and (min-width: 720px) {
-  #content .box-content { width: 33%; }
-}
-
-@media screen and (min-width: 992px) {
-  #content .box-content { width: 20%; }
 }

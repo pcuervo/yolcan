@@ -5091,23 +5091,24 @@ label.check {
 label.check.c_on {
   background-color: #3ac6b1;
 }
-label.radio_option {
-  cursor: pointer;
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label span {
+  display: inline-block;
   border-radius: 100px;
   border: solid 5px #8c8c8c;
   background-color: #d9d9d9;
   width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
 }
-label.radio_option input[type="radio"]:checked {
+input[type="checkbox"]:checked + label span {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-}
-label.radio_option input[type="radio"]:checked:focus,
-label.radio_option input[type="radio"]:checked:visited,
-label.radio_option input[type="radio"]:checked:active,
-label.radio_option input[type="radio"]:checked.active {
   border: solid 5px #3ac6b1;
   background-color: #3ac6b1;
 }
@@ -6679,6 +6680,32 @@ button.close {
     bottom: 20px;
   }
 }
+.box-content img {
+  max-width: 100%;
+}
+#content .box-content {
+  width: 50%;
+  padding: 6px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 12px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+@media screen and (min-width: 720px) {
+  #content .box-content {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .box-content {
+    width: 20%;
+  }
+}
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
@@ -6896,6 +6923,9 @@ button.close {
 }
 .width-19 {
   width: 19%;
+}
+.height-50 {
+  height: 50px;
 }
 .no-padding {
   padding: 0 !important;
@@ -7190,35 +7220,6 @@ button.close {
   background-color: #fff;
   text-decoration: none;
 }
-.height-50 {
-  height: 50px;
-}
-.box-content img {
-  max-width: 100%;
-}
-#content .box-content {
-  width: 50%;
-  padding: 6px;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 12px;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-}
-@media screen and (min-width: 720px) {
-  #content .box-content {
-    width: 33%;
-  }
-}
-@media screen and (min-width: 992px) {
-  #content .box-content {
-    width: 20%;
-  }
-}
 @-ms-viewport {
   width: device-width;
 }
@@ -7429,20 +7430,6 @@ button.close {
     display: none !important;
   }
 }
-footer .svg {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-footer h3 {
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .social-media {
-    display: block;
-    text-align: left;
-    margin-top: 10px;
-  }
-}
 icon {
   display: inline-block;
   vertical-align: middle;
@@ -7572,5 +7559,19 @@ header {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+}
+footer .svg {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer h3 {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .social-media {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
