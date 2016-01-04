@@ -6678,6 +6678,32 @@ button.close {
     bottom: 20px;
   }
 }
+.box-content img {
+  max-width: 100%;
+}
+#content .box-content {
+  width: 50%;
+  padding: 6px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 12px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+@media screen and (min-width: 720px) {
+  #content .box-content {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #content .box-content {
+    width: 20%;
+  }
+}
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
@@ -6895,6 +6921,9 @@ button.close {
 }
 .width-19 {
   width: 19%;
+}
+.height-50 {
+  height: 50px;
 }
 .no-padding {
   padding: 0 !important;
@@ -7189,35 +7218,6 @@ button.close {
   background-color: #fff;
   text-decoration: none;
 }
-.height-50 {
-  height: 50px;
-}
-.box-content img {
-  max-width: 100%;
-}
-#content .box-content {
-  width: 50%;
-  padding: 6px;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 12px;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-}
-@media screen and (min-width: 720px) {
-  #content .box-content {
-    width: 33%;
-  }
-}
-@media screen and (min-width: 992px) {
-  #content .box-content {
-    width: 20%;
-  }
-}
 @-ms-viewport {
   width: device-width;
 }
@@ -7428,20 +7428,6 @@ button.close {
     display: none !important;
   }
 }
-footer .svg {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-footer h3 {
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .social-media {
-    display: block;
-    text-align: left;
-    margin-top: 10px;
-  }
-}
 icon {
   display: inline-block;
   vertical-align: middle;
@@ -7571,5 +7557,19 @@ header {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
+}
+footer .svg {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer h3 {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .social-media {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
