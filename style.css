@@ -1302,6 +1302,12 @@ h3 {
 p {
   margin: 0 0 10px;
   font-size: 14px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
 }
 .fact {
   font-family: "proxima-nova", sans-serif;
@@ -6852,6 +6858,10 @@ button.close {
 .underline {
   text-decoration: underline;
 }
+.no-decoration,
+.no-decoration:hover {
+  text-decoration: none;
+}
 .ellipsis {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -6861,6 +6871,9 @@ button.close {
   color: #498D42;
 }
 .color-primary-darken {
+  color: #272c28;
+}
+.color-primary-darken--hover:hover {
   color: #272c28;
 }
 .color-light {
@@ -6882,6 +6895,9 @@ button.close {
   color: #d9d9d9;
 }
 .color-dark {
+  color: #000;
+}
+.color-dark-hover:hover {
   color: #000;
 }
 .bg-primary {
@@ -7161,8 +7177,8 @@ button.close {
   margin-right: 5px;
 }
 .margin-sides--small {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
 .margin-sides--large {
   margin-left: 40px;

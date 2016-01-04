@@ -87,6 +87,8 @@
 
 // Text-decoration
 .underline { text-decoration: underline;}
+.no-decoration,
+.no-decoration:hover { text-decoration: none;}
 
 // Ellipsis
 .ellipsis{
@@ -97,6 +99,7 @@
 // -------------------------
 .color-primary          { color: @primary; }
 .color-primary-darken   { color: @primary-darken; }
+.color-primary-darken--hover:hover { color: @primary-darken; }
 .color-light            { color: @light;}
 .color-secondary        { color: @secondary; }
 .color-tertiary         { color: @tertiary;}
@@ -104,6 +107,7 @@
 .color-gray-xlight      { color: @gray-xlight;}
 .color-gray-xxlight     { color: @gray-xxlight;}
 .color-dark             { color: @gray-base;}
+.color-dark-hover:hover             { color: @gray-base;}
 
 // Background-Color
 // -------------------------
@@ -225,7 +229,7 @@
 
 .margin-sides{ margin-left: @margin-base; margin-right: @margin-base; }
 .margin-sides--xsmall{ margin-left: (@margin-base/4); margin-right: (@margin-base/4); }
-.margin-sides--small{ margin-left: (@margin-base/2); margin-right: (@margin-base/2); }
+.margin-sides--small{ margin-left: (@margin-base/2)!important; margin-right: (@margin-base/2)!important; }
 .margin-sides--large{ margin-left: (@margin-base*2); margin-right: (@margin-base*2); }
 
 .margin-right{ margin-right: @margin-base; }
