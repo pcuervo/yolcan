@@ -5091,10 +5091,10 @@ label.check {
 label.check.c_on {
   background-color: #3ac6b1;
 }
-input[type="checkbox"] {
+input[type="radio"] {
   display: none;
 }
-input[type="checkbox"] + label span {
+input[type="radio"] + label span {
   display: inline-block;
   border-radius: 100px;
   border: solid 5px #8c8c8c;
@@ -5104,7 +5104,7 @@ input[type="checkbox"] + label span {
   vertical-align: middle;
   cursor: pointer;
 }
-input[type="checkbox"]:checked + label span {
+input[type="radio"]:checked + label span {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
