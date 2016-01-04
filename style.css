@@ -7043,6 +7043,9 @@ button.close {
 .padding--right {
   padding-right: 12px;
 }
+.padding--right--xsmall {
+  padding-right: 3px;
+}
 .padding--right--small {
   padding-right: 6px;
 }
