@@ -1362,6 +1362,9 @@ mark,
 .text-strong {
   font-weight: bold!important;
 }
+.text-semibold {
+  font-weight: 600;
+}
 .text-xbold {
   font-weight: 800;
 }
