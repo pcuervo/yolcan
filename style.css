@@ -7283,9 +7283,14 @@ button.close {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  color: #3ac6b1;
   background-color: #fff;
   text-decoration: none;
+}
+.box-hover:hover a,
+.box-hover:focus a,
+.box-hover:active a,
+.box-hover.active a {
+  color: #3ac6b1;
 }
 .box-hover a {
   color: #fff;
@@ -7305,6 +7310,9 @@ button.close {
 .box-hover a span.arrow-up:focus,
 .box-hover a span.arrow-up:active,
 .box-hover a span.arrow-up.active {
+  margin-left: 5px;
+  width: 11px;
+  height: 11px;
   content: url("icons/arrow-up-.svg");
 }
 @-ms-viewport {
