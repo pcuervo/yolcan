@@ -264,13 +264,12 @@
   color: @light;
   padding: 10px 1px;
   text-decoration: none;
-
   &:hover,
   &:focus,
   &:active,
   &.active{
     .transition;
-    color: @secondary;
+    a{color: @secondary;}
     background-color: @light;
     text-decoration: none;
   }
@@ -289,6 +288,9 @@
       &:focus,
       &:active,
       &.active{
+      .margin-left--xsmall;
+      width: 11px;
+      height: 11px;  
       content: url("icons/arrow-up-.svg");
       }
     //span.arrow-up{
