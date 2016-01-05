@@ -7277,8 +7277,7 @@ button.close {
 }
 .box-hover:hover,
 .box-hover:focus,
-.box-hover:active,
-.box-hover.active {
+.box-hover:active {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -7288,32 +7287,33 @@ button.close {
 }
 .box-hover:hover a,
 .box-hover:focus a,
-.box-hover:active a,
-.box-hover.active a {
+.box-hover:active a {
   color: #3ac6b1;
+}
+.box-hover:hover span.arrow-up,
+.box-hover:focus span.arrow-up,
+.box-hover:active span.arrow-up {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  margin-left: 5px;
+  width: 11px;
+  height: 11px;
+  content: url("icons/arrow-up-.svg");
 }
 .box-hover a {
   color: #fff;
 }
 .box-hover a:hover,
 .box-hover a:focus,
-.box-hover a:active,
-.box-hover a.active {
+.box-hover a:active {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   color: #3ac6b1;
   text-decoration: none;
-}
-.box-hover a span.arrow-up:hover,
-.box-hover a span.arrow-up:focus,
-.box-hover a span.arrow-up:active,
-.box-hover a span.arrow-up.active {
-  margin-left: 5px;
-  width: 11px;
-  height: 11px;
-  content: url("icons/arrow-up-.svg");
 }
 @-ms-viewport {
   width: device-width;
