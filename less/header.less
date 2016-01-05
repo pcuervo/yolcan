@@ -34,6 +34,8 @@ header{
 	top: 0;
 }
 
+// Style menu-info desktop
+
 .info-menu{
 	.padding--sides--small;
 	border-right: solid 1px;
@@ -51,51 +53,35 @@ a.info-menu:last-child{
 }
 
 
-
-//
-// Tutorials
-// --------------------------------------------------
-
-
-// Grid
-// .grid-item{
-//   overflow: hidden;
-// }
-
-// .grid-item:hover .grid-item__info_compressed{
-//   // bottom: 180%;
-// }
-
 .grid-item:hover .grid-item__info{
   top: 100px;
 }
-
-// .grid-item__image{}
-
-// .grid-item__info_compressed{
-// //   position: absolute; top: 0; right: 0; bottom: 0; left: 0;
-//   // .transition(all 0.4s ease-out);
-//   // height: 100px;
-// }
 
 .grid-item__info{
   position: absolute; top: 180%; right: 10px; top: -300px; left: 10px;
   .transition(all 0.4s ease);
 }
 
-// .grid-item__info__bg{
-//   width: 100%;
-//   padding: 5px;
-//   position: absolute; bottom: 0; left: 0;
 
-// }
 
-// .menu-header{
-// 	width: 100%;
-// 	background-color: rgba(255, 255, 255, 0.9);
-// 	font-size: 22px;
-// 	text-align: center;
-// 	padding: 20px 50px;
-// 	position: relative;
-// 	z-index: 100;
-// }
+// Style content modal-menu movil
+
+#menu-info div > div > ul > li > a,
+#main-menu div > div > ul > li > a, {
+   display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    text-decoration: none;
+    .color-primary-darken;
+    &:hover,
+    &:focus {
+    	color: @primary;
+        text-decoration: none;
+        .transition;
+      }
+}

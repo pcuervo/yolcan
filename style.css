@@ -6093,7 +6093,7 @@ button.close {
   display: none;
   overflow: hidden;
   position: fixed;
-  top: 0;
+  top: 75px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -6124,11 +6124,10 @@ button.close {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -6151,8 +6150,8 @@ button.close {
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 .modal-header {
   padding: 15px;
@@ -6197,8 +6196,8 @@ button.close {
     margin: 30px auto;
   }
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   }
   .modal-sm {
     width: 300px;
@@ -6208,6 +6207,18 @@ button.close {
   .modal-lg {
     width: 900px;
   }
+}
+#menu-info div > div > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #272c28;
 }
 .tooltip {
   position: absolute;
@@ -7618,6 +7629,30 @@ a.info-menu:last-child {
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
+}
+#menu-info div > div > ul > li > a,
+#main-menu div > div > ul > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #272c28;
+}
+#menu-info div > div > ul > li > a:hover,
+#main-menu div > div > ul > li > a:hover,
+#menu-info div > div > ul > li > a:focus,
+#main-menu div > div > ul > li > a:focus {
+  color: #498D42;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 footer .svg {
   margin-left: 5px;
