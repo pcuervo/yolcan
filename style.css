@@ -3787,6 +3787,22 @@ tbody.collapse.in {
     right: auto;
   }
 }
+.dropdown-nav {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 22px;
+  text-align: center;
+  padding: 20px 50px;
+}
+.dropdown-select {
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 12px;
+  padding: 5px;
+  border-bottom: 1px solid #3ac6b1;
+  top: inherit;
+  margin-top: -1px;
+}
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -4322,22 +4338,6 @@ nav a:focus {
   margin-top: -1px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-}
-.dropdown-nav {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  font-size: 22px;
-  text-align: center;
-  padding: 20px 50px;
-}
-.dropdown-select {
-  width: 100%;
-  background-color: #ffffff;
-  font-size: 12px;
-  padding: 5px;
-  border-bottom: 1px solid #3ac6b1;
-  top: inherit;
-  margin-top: -1px;
 }
 .navbar {
   position: relative;
@@ -6062,14 +6062,11 @@ button.list-group-item-danger.active:focus {
   border-radius: 3px;
 }
 .close {
-  float: right;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
 }
 .close:hover,
 .close:focus {
@@ -6086,6 +6083,16 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+.close-menu--info {
+  position: relative;
+  right: 55px;
+  top: 23px;
+}
+.close-main--menu {
+  position: relative;
+  right: 15px;
+  top: 23px;
+}
 .modal-open {
   overflow: hidden;
 }
@@ -6093,7 +6100,7 @@ button.close {
   display: none;
   overflow: hidden;
   position: fixed;
-  top: 75px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -6127,7 +6134,6 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -6154,7 +6160,9 @@ button.close {
   filter: alpha(opacity=0);
 }
 .modal-header {
-  padding: 15px;
+  height: 75px;
+  background-color: transparent;
+  padding: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
@@ -6166,6 +6174,7 @@ button.close {
 }
 .modal-body {
   position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 15px;
 }
 .modal-footer {
