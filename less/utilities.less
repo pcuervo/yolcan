@@ -99,15 +99,18 @@
 // -------------------------
 .color-primary          { color: @primary; }
 .color-primary-darken   { color: @primary-darken; }
-.color-primary-darken--hover:hover { color: @primary-darken; }
 .color-light            { color: @light;}
+.color-light--hover:hover { color: @light;}
 .color-secondary        { color: @secondary; }
 .color-tertiary         { color: @tertiary;}
 .color-quaternary       { color: @quaternary;}
 .color-gray-xlight      { color: @gray-xlight;}
 .color-gray-xxlight     { color: @gray-xxlight;}
 .color-dark             { color: @gray-base;}
-.color-dark-hover:hover             { color: @gray-base;}
+
+.color-primary-darken--hover:hover { color: @primary-darken; }
+.color-secondary--hover:hover      { color: @secondary; }
+.color-dark-hover:hover { color: @gray-base;}
 
 // Background-Color
 // -------------------------
@@ -177,12 +180,16 @@
 .padding--right--xlarge{ padding-right: (@padding-base-vertical*6); }
 .padding--right--xxlarge{ padding-right: (@padding-base-vertical*8); }
 
+.padding--right--small--sm{ @media (min-width: @screen-sm){ padding-right: (@padding-base-vertical); } }
+
 .no-padding--left{ padding-left: 0; }
 .padding--left{ padding-left: (@padding-base-vertical*2); }
 .padding--left--small{ padding-left: (@padding-base-vertical); }
 .padding--left--large{ padding-left: (@padding-base-vertical*4); }
 .padding--left--xlarge{ padding-left: (@padding-base-vertical*6); }
 .padding--left--xxlarge{ padding-left: (@padding-base-vertical*8); }
+
+.padding--left--small--sm{ @media (min-width: @screen-sm){ padding-left: (@padding-base-vertical); } }
 
 .padding--square{
   width: 100%;

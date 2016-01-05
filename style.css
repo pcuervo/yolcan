@@ -1351,6 +1351,11 @@ mark,
 .text-nowrap {
   white-space: nowrap;
 }
+@media (min-width: 768px) {
+  .text-center--sm {
+    text-align: center;
+  }
+}
 .text-lowercase {
   text-transform: lowercase;
 }
@@ -1578,6 +1583,12 @@ address {
 }
 .word-spacing {
   word-spacing: 5px;
+}
+.fz-16 {
+  font-size: 16px;
+}
+.fz-18 {
+  font-size: 18px;
 }
 .fz-medium {
   font-size: 20px;
@@ -5448,11 +5459,6 @@ a.thumbnail.active {
 .rectangle-small {
   height: 200px;
 }
-@media (min-width: 768px) {
-  .rectangle-small {
-    height: 250px;
-  }
-}
 .img-user {
   border-radius: 50%;
   margin: auto;
@@ -6863,10 +6869,10 @@ button.close {
 .color-primary-darken {
   color: #272c28;
 }
-.color-primary-darken--hover:hover {
-  color: #272c28;
-}
 .color-light {
+  color: #fff;
+}
+.color-light--hover:hover {
   color: #fff;
 }
 .color-secondary {
@@ -6886,6 +6892,12 @@ button.close {
 }
 .color-dark {
   color: #000;
+}
+.color-primary-darken--hover:hover {
+  color: #272c28;
+}
+.color-secondary--hover:hover {
+  color: #3ac6b1;
 }
 .color-dark-hover:hover {
   color: #000;
@@ -7051,6 +7063,11 @@ button.close {
 .padding--right--xxlarge {
   padding-right: 48px;
 }
+@media (min-width: 768px) {
+  .padding--right--small--sm {
+    padding-right: 6px;
+  }
+}
 .no-padding--left {
   padding-left: 0;
 }
@@ -7068,6 +7085,11 @@ button.close {
 }
 .padding--left--xxlarge {
   padding-left: 48px;
+}
+@media (min-width: 768px) {
+  .padding--left--small--sm {
+    padding-left: 6px;
+  }
 }
 .padding--square {
   width: 100%;
