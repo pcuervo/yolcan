@@ -6083,14 +6083,15 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-.close-menu--info {
+.close-menu {
   position: relative;
+}
+.close-menu--info {
   right: 55px;
   top: 23px;
 }
 .close-main--menu {
-  position: relative;
-  right: 15px;
+  right: 14px;
   top: 23px;
 }
 .modal-open {
@@ -6922,6 +6923,9 @@ button.close {
 }
 .color-dark-hover:hover {
   color: #000;
+}
+.color-transparent {
+  color: transparent;
 }
 .bg-primary {
   background-color: #498D42;
