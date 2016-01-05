@@ -269,8 +269,39 @@
   &:focus,
   &:active,
   &.active{
+    .transition;
     color: @secondary;
     background-color: @light;
     text-decoration: none;
   }
+  a{
+    color: @light;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active{
+      .transition;
+      color: @secondary;
+      text-decoration: none;
+    }
+    span.arrow-up{
+      &:hover,
+      &:focus,
+      &:active,
+      &.active{
+      content: url("icons/arrow-up-.svg");
+      }
+    //span.arrow-up{
+     //&:before { ''; }
+     //&:after {
+     //  content: url("icons/arrow-up-.svg");
+     //  }
+     //}
+    }
+  }
 }
+
+  
+
+
+

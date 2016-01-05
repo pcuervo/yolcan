@@ -7265,9 +7265,33 @@ button.close {
 .box-hover:focus,
 .box-hover:active,
 .box-hover.active {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   color: #3ac6b1;
   background-color: #fff;
   text-decoration: none;
+}
+.box-hover a {
+  color: #fff;
+}
+.box-hover a:hover,
+.box-hover a:focus,
+.box-hover a:active,
+.box-hover a.active {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  color: #3ac6b1;
+  text-decoration: none;
+}
+.box-hover a span.arrow-up:hover,
+.box-hover a span.arrow-up:focus,
+.box-hover a span.arrow-up:active,
+.box-hover a span.arrow-up.active {
+  content: url("icons/arrow-up-.svg");
 }
 @-ms-viewport {
   width: device-width;
