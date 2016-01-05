@@ -6085,14 +6085,8 @@ button.close {
 }
 .close-menu {
   position: relative;
-}
-.close-menu--info {
-  right: 55px;
   top: 23px;
-}
-.close-main--menu {
-  right: 14px;
-  top: 23px;
+  width: 100px;
 }
 .modal-open {
   overflow: hidden;
