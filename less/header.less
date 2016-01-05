@@ -34,6 +34,8 @@ header{
 	top: 0;
 }
 
+// Style menu-info desktop
+
 .info-menu{
 	.padding--sides--small;
 	border-right: solid 1px;
@@ -48,4 +50,26 @@ header{
 }
 a.info-menu:last-child{
 	border-right: none
+}
+
+// Style content modal-menu movil
+
+#menu-info div > div > ul > li > a,
+#main-menu div > div > ul > li > a, {
+   display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    text-decoration: none;
+    .color-primary-darken;
+    &:hover,
+    &:focus {
+    	color: @primary;
+        text-decoration: none;
+        .transition;
+      }
 }

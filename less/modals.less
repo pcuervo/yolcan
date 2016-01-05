@@ -17,7 +17,7 @@
   display: none;
   overflow: hidden;
   position: fixed;
-  top: 0;
+  top: 75px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -44,13 +44,12 @@
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
 }
 
 // Actual modal
 .modal-content {
   position: relative;
-  background-color: @modal-content-bg;
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
   border: 1px solid @modal-content-border-color;
   border-radius: @border-radius-large;
@@ -71,7 +70,7 @@
   background-color: @modal-backdrop-bg;
   // Fade for backdrop
   &.fade { .opacity(0); }
-  &.in { .opacity(@modal-backdrop-opacity); }
+  &.in { .opacity(0); }
 }
 
 // Modal header
@@ -138,7 +137,7 @@
     margin: 30px auto;
   }
   .modal-content {
-    .box-shadow(0 5px 15px rgba(0,0,0,.5));
+    .box-shadow(0 5px 15px rgba(0,0,0,.4));
   }
 
   // Modal sizes
@@ -147,4 +146,18 @@
 
 @media (min-width: @screen-md-min) {
   .modal-lg { width: @modal-lg; }
+}
+
+// Style content modal-menu
+#menu-info div > div > ul > li > a{
+   display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    text-decoration: none;
+    .color-primary-darken;
 }
