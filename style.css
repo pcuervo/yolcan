@@ -6970,6 +6970,9 @@ a:hover {
 .height-50 {
   height: 50px;
 }
+.height-1200 {
+  height: 1200px;
+}
 .no-padding {
   padding: 0 !important;
 }
