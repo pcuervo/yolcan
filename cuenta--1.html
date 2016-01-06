@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Yolcan</title>
+		<!-- Sets initial viewport load and disables zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- SEO -->
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<!-- Compatibility -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
+		<!-- Favicon - generated with http://www.favicomatic.com/ -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="Little Crow"/>
+		<meta name="msapplication-TileColor" content="#009C9F" />
+		<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Google font(s) -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+		<!-- Font awesome -->
+		<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Typekit -->
+		<script src="https://use.typekit.net/upn0scl.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head>
+
+	<body>
+		<header class="[ bg-light ]">
+			<div class=" [ container ] ">
+				<div class="[ row ]">
+					<div class="[ col-xs-6 col-md-8 ]">
+						<h1 class="[ no-margin-top-bottom ]">
+							<a title="Yolcan" href="index.html" id="logo">
+								<span class="[ hidden ]">Yolcan</span>
+								<img class="[ width-logo ]" alt="Yolcan" src="img/logo.svg">
+							</a>
+						</h1>
+					</div>
+					<div class="[ col-xs-6 inherit ][ visible-xs ][ margin-top--small ][ text-right ]">
+						<div class="[ inline-block ]">
+							<span>
+								<a data-toggle="modal" data-target="#menu-info">
+									<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/infomation-circle.svg">
+								</a>
+							</span>
+							<div id="menu-info" class="[ modal fade ]" role="dialog">
+								<div class="[ modal-dialog ]">
+
+									<div class="[ modal-content ][ color-light ]">
+										<div class="modal-header">
+											<button type="button" class="[ close ][ close-menu close-menu--info ]" data-dismiss="modal">
+												<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-transparent ]"src="icons/infomation-circle.svg">
+											</button>
+										</div>
+										<div class="[ no-margin ][ modal-body ][ bg-ligth ][ padding--top--large ][ text-center ]">
+											<ul class="[ no-padding ]">
+												<li><a href="cuenta.html">tu cuenta</a></li>
+												<li><a href="carrito.html">tu carrito</a></li>
+												<li><a href="faq.html">faq</a></li>
+												<li><a href="blog.html">blog</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="[ inline-block ][ margin-left--xsmall ]">
+							<span class="[ dropdown-toggle ]" data-toggle="dropdown">
+								<a data-toggle="modal" data-target="#main-menu">
+									<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/navigation.svg">
+								</a>
+							</span>
+							<div id="main-menu" class="[ modal fade ]" role="dialog">
+								<div class="[ modal-dialog ]">
+									<div class="[ modal-content ][ color-light ]">
+										<div class="modal-header">
+											<button type="button" class="[ close ][ close-menu close-main--menu ]" data-dismiss="modal">
+												<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-transparent ]"src="icons/navigation.svg">
+											</button>
+										</div>
+										<div class="[ no-margin ][ modal-body ][ bg-ligth ][ padding--top--large ][ text-center ]">
+											<ul class="[ padding ]">
+												<li><a class="[ margin-bottom ][ text-uppercase ][ border-bottom--orange ]" href="nuestros-productos.html"><strong>Productos</strong></a></li>
+												<li><a class="[ margin-bottom ][ text-uppercase ][ border-bottom--green ]" href="conocenos.html"><strong>Conócenos</strong></a></li>
+												<li><a class="[ margin-bottom ][ text-uppercase ][ border-bottom--blue ]" href="recetas.html"><strong>Recetas</strong></a></li>
+												<li><a class="[ margin-bottom ][ text-uppercase ][ border-bottom--pink ]" href="visitanos.html"><strong>Visitas</strong></a></li>
+												<li><a class="[ margin-bottom ][ text-uppercase ][ border-bottom--secondary ]" href="contactanos.html"><strong>Contáctanos</strong></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- info-menu desktop -->
+					<div class="[ pull-right ][ hidden-xs ][ margin-top ][ padding--sides--xsmall ]">
+						<a class="[ color-primary-darken ][ info-menu ]" href="cuenta.html">tu cuenta</a>
+						<a class="[ color-primary-darken ][ info-menu ]" href="carrito.html">tu carrito</a>
+						<a class="[ color-primary-darken ][ info-menu ]" href="faq.html">faq</a>
+						<a class="[ color-primary-darken ][ info-menu ]" href="blog.html">blog</a>
+					</div>
+				</div>
+				<!-- menu desktop -->
+				<nav class="[ row ][ hidden-xs ]" >
+					<div class="[ col-sm-12 ]">
+						<a class="[ color-primary-darken ][ width-20 ][ padding--right--xsmall ][ text-uppercase ][  ][ inline-block ]" href="nuestros-productos.html"><div class="[ border-bottom--orange ]">Productos</div>
+						</a><a class="[ color-primary-darken ][ width-20 ][ padding--right--xsmall ][ text-uppercase ][ inline-block ]" href="conocenos.html"><div class="[ border-bottom--green ]">Conócenos</div>
+						</a><a class="[ color-primary-darken ][ width-20 ][ padding--right--xsmall ][ text-uppercase ][ inline-block ]" href="recetas.html"><div class="[ border-bottom--blue ]">Recetas</div>
+						</a><a class="[ color-primary-darken ][ width-20 ][ padding--right--xsmall ][ text-uppercase ][ inline-block ]" href="visitanos.html"><div class="[ border-bottom--pink ]">Visitas</div>
+						</a><a class="[ color-primary-darken ][ width-20 ][ text-uppercase ][ inline-block ]" href="contactanos.html"><div class="[ border-bottom--secondary ]">Contáctanos</div></a>
+					</div>
+				</nav>
+			</div> <!-- /container -->
+		</header>
+		<div class="[ container ]" >
+			<div class="[ margin-bottom ][ border-bottom ]">
+				<div class="[ row ]">
+					<div class="[ col-xs-4 ][ inline-block align-middle ][ margin-top-bottom ]">
+						<img class="[ img-user img-responsive ]" src="img/profile.png">
+					</div>
+					<div class="[ col-xs-8 ][ inline-block align-middle ][ margin-bottom ]">
+						<h2><strong>Daniela Morfín</strong></h2>
+						<a href="perfil-edit.html" class="[ underline ][ color-secondary ]"><em>editar</em></a>
+						<a href="#" class="[ underline ][ color-secondary ]"><em>salir</em></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="[ container ]" >
+			<div class="[ margin-bottom ][ border-bottom ]">
+				<div class="[ row ]">
+					<div class="[ col-xs-12 ]">
+						<h4>Tu cuenta</h4>
+						<p>Tu saldo es de <strong>$600.00</strong></p>
+						<p>Equivale a <strong>2 y media canastas</strong></p>
+					</div>
+					<div class="[ col-xs-12 ][ text-center ]">
+						<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">agrega saldo a tu cuenta</a>
+						<a href="#" class="[ btn btn-secondary ][ margin-bottom ]">programa tu pago</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="[ container ]">
+			<div class="[ margin-bottom ][ border-bottom ]">
+				<div class="[ row ]">
+					<div class="[ col-xs-12 ]">
+						<h4>Tu próxima canasta</h4>
+						<p>Media canasta para el 12 de mayo:</p>
+						<ul class="[ list-style-none ][ padding--left ]">
+							<li>Mix de ensalada</li>
+							<li>Kale</li>
+							<li>Quelite</li>
+							<li>Calabaza</li>
+							<li>Pepino</li>
+							<li>Mantequilla</li>
+							<li>Zanahoria</li>
+						</ul>
+						<div class="[ margin-bottom ]">
+							<a href="#" class="[ underline ][ color-secondary ]"><em>Consulta recetas con estos ingredientes</em></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="[ container ][ margin-bottom ]">
+			<div class="[ row ]">
+				<div class="[ col-xs-12 ]">
+					<h4>Agrega productos</h4>
+					<p>Selecciona los productos que deseas agregar a tu canasta:</p>
+				</div>
+			</div>
+
+			<form>
+				<div class="[ margin-bottom ]">
+					<a data-toggle="collapse" href="#huevo" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Huevo</p>
+					</a>
+					<div id="huevo" class="[ panel-collapse collapse in ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ margin-bottom ]">
+					<a data-toggle="collapse" href="#queso" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Queso</p>
+					</a>
+					<div id="queso" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ margin-bottom ]">
+					<a data-toggle="collapse" href="#tortilla-azul" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Tortilla azul</p>
+					</a>
+					<div id="tortilla-azul" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ margin-bottom ]">
+					<a data-toggle="collapse" href="#tortilla-blanca" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Tortilla blanca</p>
+					</a>
+					<div id="tortilla-blanca" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ margin-bottom ]">
+					<a data-toggle="collapse" href="#cafe" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Café</p>
+					</a>
+					<div id="cafe" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="[ margin-bottom ]">
+					<a data-toggle="collapse" href="#miel" class="[ no-decoration color-dark color-dark-hover ]">
+						<button type="submit" class="[ inline-block align-middle ][ btn btn-secondary ]">+</button>
+						<p class="[ inline-block align-middle ][ no-margin ]">Miel de abeja</p>
+					</a>
+					<div id="miel" class="[ panel-collapse collapse ][ padding--top ]">
+						<p class="[ color-gray-xlight ]">Cantidad</p>
+						<div class="[ row ]">
+							<div class="[ col-xs-3 padding--right--small ]">
+								<input type="number" class="[ width-90 padding--xsmall ][ form-control no-border no-border-radius bg-gray ]">
+							</div>
+							<div class="[ col-xs-5 no-padding ]">
+								<div>
+									<input type="radio" id="option1" name="cc">
+									<label for="option1"><span class="[ margin-right--xxsmall ]"></span> Sólo esta ocación</label>
+								</div>
+								<div>
+									<input type="radio" id="option2" name="cc">
+									<label for="option2"><span class="[ margin-right--xxsmall ]"></span> Cada semana</label>
+								</div>
+								<div>
+									<input type="radio" id="option3" name="cc">
+									<label for="option3"><span class="[ margin-right--xxsmall ]"></span>Cada 15 días</label>
+								</div>
+							</div>
+							<div class="[ col-xs-4 padding--left--small ]">
+								<button type="submit" class="[ btn btn-secondary padding--xsmall ][ margin-bottom ]">agregar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<footer class="[ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">
+			<div class="[ container ]">
+				<div class="[ row ]">
+						<div class="[ col-sm-3 ]">
+							<h3><em>Contacto</em></h3>
+							<!-- Contacto: social-media -->
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]"  href="tel:+525552555555">
+								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/phone-5.svg">
+								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">555555-5555</span>
+							</a>
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="#"><!-- href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" -->
+								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-whatsapp.svg">
+								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">555555-5555</span>
+							</a>
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="#">
+								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/email.svg">
+								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">contacto@yolcan.com</span>
+							</a>
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="https://www.facebook.com/Yolcan-190099034343351/">
+								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
+								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">/yolcan</span>
+							</a>
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="#">
+								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
+								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">@yolcan</span>
+							</a>
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="#">
+								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
+								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">@yolcan</span>
+							</a>
+						</div>
+						<div class="[ col-sm-4 col-md-3 ]">
+							<h3><em>Únete</em></h3>
+							<div class="[ margin-bottom ]">
+								<a href="#" class="[ inline-block align-middle ][ btn btn-secondary margin-top--small ]">registrate</a>
+								<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ][ margin-top--small ]">agenda una cita</a>
+							</div>
+						</div>
+						<div class="[ col-sm-2 col-md-3 ]">
+							<h3><em>Métodos de pago</em></h3>
+							<div class="[ row ]">
+								<img class="[ icon icon--iconed--xxxlarge ][ margin-sides--small ]" src="icons/visa.svg" alt="">
+								<img class="[ icon icon--iconed--xxxlarge ][ margin-sides--small ]" src="icons/paypal.svg" alt="">
+								<img class="[ icon icon--iconed--xxxlarge ][ margin-sides--small ]" src="icons/mastercard.svg" alt="">
+							</div>
+						</div>
+						<div class="[ col-sm-3 ]">
+							<h3><em>Newsletter</em></h3>
+							<div class="[ text-left ]">
+								<p>Recibe las últimas noticias y ofertas antes que nadie, déjanos tu correo.</p>
+								<form class="[ margin-bottom ][ hidden-xs ]">
+									<div class="[ form-group ]">
+										<input type="text" class="[ form-control ][ no-border-radius ][ margin-bottom--small ]">
+										<button type="submit" href="#" class="[ btn btn-secondary ][ no-margin ]">suscribirme</button>
+									</div>
+								</form>
+							</div>
+							<!-- input inline -->
+							<div class="[ visible-xs ]">
+								<form class="[ input-group ]">
+									<input type="text" class="[ form-control ][ no-border-radius ]">
+									<span class="[ input-group-btn ]">
+										<button class="[ input-search--button ][ btn btn-secondary ]" type="submit">
+											suscribirme
+										</button>
+									</span>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="[ row ]">
+						<div class="[ col-xs-12 ][ margin-top-bottom ]">
+							<p class="[ color-gray-xlight ]">Content copyright 2015. Yolcan. All right reserved.</p>
+						</div>
+					</div>
+				</div>
+		</footer>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<!--<script src="js/plugins.js"></script>-->
+		<script src="js/functions.js"></script>
+		<script>
+			$( document ).ready(function() {
+				/**
+				 * On ready
+				**/
+				imgToSvg();
+
+				/**
+				 * Triggered events
+				**/
+			});
+		</script>
+	</body>
+</html>
