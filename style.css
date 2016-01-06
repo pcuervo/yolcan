@@ -1605,6 +1605,25 @@ body,
   font-style: normal;
   font-weight: 300;
 }
+.user-content a {
+  color: #3ac6b1;
+  border-bottom: 1px solid #3ac6b1;
+}
+.user-content p {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 600px;
+}
+.user-content p:nth-child(2) {
+  color: #8c8c8c;
+  font-family: "bree-serif", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.user-content h5 {
+  font-size: 20px;
+  color: #498D42;
+}
 .list-inside {
   list-style-position: inside;
 }
