@@ -6800,6 +6800,11 @@ button.close {
 .hidden {
   display: none !important;
 }
+a,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
 .affix {
   position: fixed;
 }
