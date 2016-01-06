@@ -7572,6 +7572,12 @@ button.close {
   width: 32px !important;
   height: 32px;
 }
+@media (min-width: 768px) {
+  footer .icon--iconed--xlarge {
+    width: 20px !important;
+    height: 20px;
+  }
+}
 .icon--iconed--xxlarge {
   width: 50px !important;
   height: 50px;

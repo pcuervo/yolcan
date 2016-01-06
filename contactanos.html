@@ -48,11 +48,6 @@
 		<!-- Typekit -->
 		<script src="https://use.typekit.net/upn0scl.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-		<!-- Chart.js -->
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/Chart.js"></script>
-
 	</head>
 
 	<body>
@@ -143,28 +138,8 @@
 				</nav>
 			</div> <!-- /container -->
 		</header>
-
+		<div class="[ hidden-xs ][ [ margin-bottom--large ]"></div>
 		<div class="[ container ]">
-			<!-- menu desktop -->
-			<nav class="[ row ][ hidden-xs ][ margin-top ]" >
-				<div class="[ col-sm-12 ]">
-					<div class="[ width-20 ][ text-uppercase ][ border-bottom--orange ][ inline-block ]">
-						<a class="[ color-primary-darken ]" href="nuestros-productos.html">Productos</a>
-					</div><div
-					class="[ width-20 ][ text-uppercase ][ border-bottom--green ][ inline-block ]" >
-						<a class="[ color-primary-darken ]" href="conocenos.html">Conócenos</a>
-					</div><div
-					class="[ width-20 ][ text-uppercase ][ border-bottom--blue ][ inline-block ]">
-						<a class="[ color-primary-darken ]" href="recetas.html">Recetas</a>
-					</div><div
-					class="[ width-20 ][ text-uppercase ][ border-bottom--pink ][ inline-block ]" >
-						<a class="[ color-primary-darken ]" href="visitanos.html">Visitas</a>
-					</div><div
-					class="[ width-20 ][ text-uppercase ][ border-bottom--secondary ][ inline-block ]">
-						<a class="[ color-primary-darken ]" href="#">Contáctanos</a>
-					</div>
-				</div>
-			</nav>
 			<h2 class="[ fz-large ][ margin-bottom ]"><strong>Contáctanos</strong></h2>
 			<section class="[ row ]">
 				<form class="[ col-sm-6 ][ margin-bottom--large ]">
@@ -275,45 +250,77 @@
 				</div>
 		</footer>
 
+		<!-- modal unete -->
+		<div id="unete" class="[ modal fade ]" role="dialog">
+			<div class="[ modal-dialog ]">
+				<div class="[ modal-content ]">
+					<div class="[ modal-body ][ color-light ]">
+						<div class="[ row ]">
+							<div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ] ">
+								<div class="[ bg-primary-darken ][ padding--top-bottom--large ]">
+									<button type="button" class="[ close ][ pull-right  ]" data-dismiss="modal">
+										<img class="[ svg ][ icon icon--iconed--normal icon--stroke icon--thickness-2 ][ color-secondary ][ absolute right-25 ]"src="icons/close.svg">
+									</button>
+									<div class="[ row ]">
+										<div class="[ col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 ]">
+											<h2 class="[ text-center ]">¡Bienvenido!</h2>
+											<p class="[ text-center ][ margin-bottom ]">Ingresa tus datos y comienza a formar parte de la comunidad <span class=" [ text-uppercase ]">yolcan</span></p>
+											<form class="[ border-bottom--primary--medium ][ margin-bottom ][ text-left ]">
+												<div class="[ form-group ]">
+													<label class="[ sans-serif ]">Nombre</label>
+													<input type="text" class="[ form-control no-border-radius color-gray-xlight ]">
+												</div>
+												<div class="[ form-group ]">
+													<label class="[ sans-serif ]">Correo</label>
+													<input type="email" class="[ form-control no-border-radius color-gray-xlight ]">
+												</div>
+												<div class="[ form-group ]">
+													<label class="[ sans-serif ]">Teléfono</label>
+													<input type="text" class="[ form-control no-border-radius color-gray-xlight ]">
+												</div>
+												<div class="[ text-center ]">
+													<button type="submit" href="#" class="[ btn btn-secondary ][ margin-bottom ]">únete</button>
+												</div>
+											</form>
+											<div class="[ text-center ]">
+												<a class="[ " href="https://www.facebook.com">
+													<img class="[ svg icon icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
+												</a>
+												<p class="[ inline-block ][ small sans-serif ]">Ingresa con tu cuenta en Facebook</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
-		<script src="js/functions.js"></script>
 		<script src="js/plugins.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/imagesloaded.3.1.8.min.js"></script>
+		<script src="js/jquery.masonry.3.2.1.min.js"></script>
+
 		<script>
 			$( document ).ready(function() {
 				/**
 				 * On ready
 				**/
 				imgToSvg();
-				$('.js-video-wrapper').fitVids();
+
 				/**
 				 * Triggered events
 				**/
 
-				//Chart.js
-				var ctx = $("#mycanvas").get(0).getContext("2d");
-				//pie chart data
-				//sum of values = 360
-				var data = [
-					{
-						value: 14,
-						color: "#f99134",
-						highlight: "#f96234",
-						label: "Macrotiendas"
-					},
-					{
-						value: 46,
-						color: "#c4681c",
-						highlight: "#c4471c",
-						label: "Consumo local"
-					}
-				];
-				//draw
-				var piechart = new Chart(ctx).Pie(data);
+				//Init jQuery Masonry layout
+				init_masonry();
 
 			});
 		</script>
-
 	</body>
 </html>
