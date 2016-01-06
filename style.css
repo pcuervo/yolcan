@@ -6126,9 +6126,6 @@ button.close {
   position: relative;
   min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
@@ -6189,10 +6186,6 @@ button.close {
   overflow: scroll;
 }
 @media (min-width: 768px) {
-  .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
-  }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
@@ -7071,10 +7064,10 @@ button.close {
   padding-left: 24px;
   padding-right: 24px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .padding--sides--modal {
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 .no-padding--right {
