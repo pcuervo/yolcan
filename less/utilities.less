@@ -66,9 +66,15 @@
 .static{ position: static;}
 
 .right-0{ right: 0;}
+.right-14{ right: 14px;}
+.right-25{ right: 25px;}
+.right-55{ right: 55px;}
 
 .left-30{ left: 30%}
 .left-20{ left: 20%}
+.left-14{left: 14px;}
+
+.top-23{top: 23px;}
 
 // Z-index
 .z-index--1{ z-index: 1;}
@@ -111,8 +117,6 @@
 .color-primary-darken--hover:hover { color: @primary-darken; }
 .color-secondary--hover:hover      { color: @secondary; }
 .color-dark-hover:hover { color: @gray-base;}
-
-.color-transparent{ color: transparent;}
 
 // Background-Color
 // -------------------------
@@ -174,6 +178,11 @@
 .padding--sides--xsmall{ padding-left: (@padding-base-horizontal/2); padding-right: (@padding-base-horizontal/2); }
 .padding--sides--large{ padding-left: (@padding-base-horizontal*4); padding-right: (@padding-base-horizontal*4); }
 
+.padding--sides--modal{
+  padding-left: (@padding-base-horizontal*2); padding-right: (@padding-base-horizontal*2);
+  @media (min-width: @screen-xs){ padding-left: (@padding-base-horizontal*6); padding-right: (@padding-base-horizontal*6); }
+ }
+
 .no-padding--right{ padding-right: 0; }
 .padding--right{ padding-right: (@padding-base-vertical*2); }
 .padding--right--xsmall{ padding-right: (@padding-base-vertical/2); }
@@ -211,7 +220,7 @@
 .border-bottom--secondary{ border-bottom: 5px solid @secondary; }
 .border-bottom--primary{ border-bottom: 5px solid @primary; }
 .border-bottom--secondary--small{ border-bottom: 1px solid @secondary; }
-
+.border-bottom--primary--medium{ border-bottom: 2px solid @secondary; }
 
 // Margin
 // -------------------------
@@ -279,7 +288,7 @@
       .transition;
       .margin-left--xsmall;
       width: 11px;
-      height: 11px;  
+      height: 11px;
       content: url("icons/arrow-up-.svg");
            // &::after{
             //  width: 11px;

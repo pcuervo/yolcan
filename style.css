@@ -6083,11 +6083,6 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
-.close-menu {
-  position: relative;
-  top: 23px;
-  width: 100px;
-}
 .modal-open {
   overflow: hidden;
 }
@@ -6129,6 +6124,8 @@ button.close {
 }
 .modal-content {
   position: relative;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -6156,9 +6153,7 @@ button.close {
 }
 .modal-header {
   height: 75px;
-  background-color: transparent;
   padding: 0;
-  border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
   margin-top: -2px;
@@ -6169,7 +6164,6 @@ button.close {
 }
 .modal-body {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 15px;
 }
 .modal-footer {
@@ -6195,10 +6189,6 @@ button.close {
   overflow: scroll;
 }
 @media (min-width: 768px) {
-  .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
-  }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
@@ -6834,11 +6824,26 @@ button.close {
 .right-0 {
   right: 0;
 }
+.right-14 {
+  right: 14px;
+}
+.right-25 {
+  right: 25px;
+}
+.right-55 {
+  right: 55px;
+}
 .left-30 {
   left: 30%;
 }
 .left-20 {
   left: 20%;
+}
+.left-14 {
+  left: 14px;
+}
+.top-23 {
+  top: 23px;
 }
 .z-index--1 {
   z-index: 1;
@@ -6917,9 +6922,6 @@ button.close {
 }
 .color-dark-hover:hover {
   color: #000;
-}
-.color-transparent {
-  color: transparent;
 }
 .bg-primary {
   background-color: #498D42;
@@ -7061,6 +7063,16 @@ button.close {
   padding-left: 48px;
   padding-right: 48px;
 }
+.padding--sides--modal {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media (min-width: 480px) {
+  .padding--sides--modal {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
 .no-padding--right {
   padding-right: 0;
 }
@@ -7143,6 +7155,9 @@ button.close {
 }
 .border-bottom--secondary--small {
   border-bottom: 1px solid #3ac6b1;
+}
+.border-bottom--primary--medium {
+  border-bottom: 2px solid #3ac6b1;
 }
 .no-margin {
   margin: 0 !important;
@@ -7539,6 +7554,10 @@ button.close {
 .icon--iconed--small {
   width: 10px !important;
   height: 10px;
+}
+.icon--iconed--normal {
+  width: 15px !important;
+  height: 15px;
 }
 .icon--iconed {
   width: 20px !important;
