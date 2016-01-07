@@ -54,7 +54,7 @@
 		<header class="[ bg-light ]">
 			<div class=" [ container ] ">
 				<div class="[ row ]">
-					<div class="[ col-xs-6 col-md-8 ]">
+					<div class="[ col-xs-6 ]">
 						<h1 class="[ no-margin-top-bottom ]">
 							<a title="Yolcan" href="index.html" id="logo">
 								<span class="[ hidden ]">Yolcan</span>
@@ -64,22 +64,21 @@
 					</div>
 					<div class="[ col-xs-6 inherit ][ visible-xs ][ margin-top--small ][ text-right ]">
 						<div class="[ inline-block ]">
-							<span>
-								<a data-toggle="modal" data-target="#menu-info">
-									<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/infomation-circle.svg">
-								</a>
-							</span>
+							<a data-toggle="modal" data-target="#menu-info">
+								<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/infomation-circle.svg">
+							</a>
 							<div id="menu-info" class="[ modal fade ]" role="dialog">
 								<div class="[ modal-dialog ]">
 
-									<div class="[ modal-content ][ color-light ]">
+									<div class="[ modal-content height-auto ][ color-light ]">
 										<div class="modal-header">
-											<button type="button" class="[ close ][ close-menu close-menu--info ]" data-dismiss="modal">
-												<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-transparent ]"src="icons/infomation-circle.svg">
+											<button type="button" class="[ close ][ relative top-23 right-55 ]" data-dismiss="modal">
+												<img class="[ svg ][ icon icon--iconed--medium icon--stroke ][ color-primary ]"src="icons/close.svg">
 											</button>
 										</div>
 										<div class="[ no-margin ][ modal-body ][ bg-ligth ][ padding--top--large ][ text-center ]">
 											<ul class="[ no-padding ]">
+												<li><a data-toggle="modal" data-target="#ingresa">ingresa</a></li>
 												<li><a href="cuenta.html">tu cuenta</a></li>
 												<li><a href="carrito.html">tu carrito</a></li>
 												<li><a href="faq.html">faq</a></li>
@@ -90,18 +89,16 @@
 								</div>
 							</div>
 						</div>
-						<div class="[ inline-block ][ margin-left--xsmall ]">
-							<span class="[ dropdown-toggle ]" data-toggle="dropdown">
-								<a data-toggle="modal" data-target="#main-menu">
-									<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/navigation.svg">
-								</a>
-							</span>
+						<div class="[ inline-block relative top-3 ][ margin-left--xsmall ]">
+							<a data-toggle="modal" data-target="#main-menu">
+								<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-primary ]"src="icons/navigation.svg">
+							</a>
 							<div id="main-menu" class="[ modal fade ]" role="dialog">
 								<div class="[ modal-dialog ]">
-									<div class="[ modal-content ][ color-light ]">
+									<div class="[ modal-content height-auto ][ color-light ]">
 										<div class="modal-header">
-											<button type="button" class="[ close ][ close-menu close-main--menu ]" data-dismiss="modal">
-												<img class="[ svg ][ icon icon--iconed--large icon--stroke ][ color-transparent ]"src="icons/navigation.svg">
+											<button type="button" class="[ close ][ relative top-23 right-14 ]" data-dismiss="modal">
+												<img class="[ svg ][ icon icon--iconed--medium icon--stroke ][ color-primary ]"src="icons/close.svg">
 											</button>
 										</div>
 										<div class="[ no-margin ][ modal-body ][ bg-ligth ][ padding--top--large ][ text-center ]">
@@ -120,6 +117,7 @@
 					</div>
 					<!-- info-menu desktop -->
 					<div class="[ pull-right ][ hidden-xs ][ margin-top ][ padding--sides--xsmall ]">
+						<a class="[ color-primary-darken ][ info-menu ]" data-toggle="modal" data-target="#ingresa">ingresa</a>
 						<a class="[ color-primary-darken ][ info-menu ]" href="cuenta.html">tu cuenta</a>
 						<a class="[ color-primary-darken ][ info-menu ]" href="carrito.html">tu carrito</a>
 						<a class="[ color-primary-darken ][ info-menu ]" href="faq.html">faq</a>
@@ -180,18 +178,18 @@
 		<footer class="[ bg-primary-darken ][ text-center ][ color-gray-xxlight ]">
 			<div class="[ container ]">
 				<div class="[ row ]">
-						<div class="[ col-sm-3 ]">
+						<div class="[ col-sm-3 no-padding--right no-padding--left ]">
 							<h3><em>Contacto</em></h3>
 							<!-- Contacto: social-media -->
 							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]"  href="tel:+525552555555">
 								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/phone-5.svg">
 								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">555555-5555</span>
 							</a>
-							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="#"><!-- href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" -->
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="whatsapp://send?abid=username&text=Hola"><!-- href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" -->
 								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-whatsapp.svg">
 								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">555555-5555</span>
 							</a>
-							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="#">
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="mailto:contacto@yolcan.com">
 								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/email.svg">
 								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">contacto@yolcan.com</span>
 							</a>
@@ -199,11 +197,11 @@
 								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
 								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">/yolcan</span>
 							</a>
-							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="#">
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="https://twitter.com/michinampa">
 								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/twitter.svg">
 								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">@yolcan</span>
 							</a>
-							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="#">
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="https://www.instagram.com/yolcan/">
 								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-instagram.svg">
 								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">@yolcan</span>
 							</a>
@@ -211,8 +209,8 @@
 						<div class="[ col-sm-4 col-md-3 ]">
 							<h3><em>Únete</em></h3>
 							<div class="[ margin-bottom ]">
-								<a href="#" class="[ inline-block align-middle ][ btn btn-secondary margin-top--small ]">registrate</a>
-								<a href="#" class="[ inline-block align-middle ][ btn btn-secondary ][ margin-top--small ]">agenda una cita</a>
+								<a data-toggle="modal" data-target="#unete" class="[ inline-block align-middle ][ btn btn-secondary margin-top--small ]">registrate</a>
+								<a href="visitanos.html#agenda" class="[ inline-block align-middle ][ btn btn-secondary ][ margin-top--small ]">agenda una cita</a>
 							</div>
 						</div>
 						<div class="[ col-sm-2 col-md-3 ]">
