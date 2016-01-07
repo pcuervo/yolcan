@@ -6721,12 +6721,17 @@ button.close {
   box-sizing: border-box;
   /* Opera/IE 8+ */
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 480px) {
   #content .box-content {
     width: 33%;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 768px) {
+  #content .box-content {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
   #content .box-content {
     width: 20%;
   }
