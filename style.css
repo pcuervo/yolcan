@@ -3552,6 +3552,10 @@ fieldset[disabled] .btn-danger.focus {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
+.btn-facebook {
+  background-color: #3b5998;
+  padding: 6px 3px;
+}
 .btn-link {
   color: #337ab7;
   font-weight: normal;
