@@ -146,7 +146,11 @@ a:hover {
 .width-30   { width: 30%;}
 .width-20   { width: 20%;}
 .width-19   { width: 19%;}
-.width-280  { width: 280px;}
+
+.width-bg   {
+    width: 280px;
+    @media (min-width: @screen-sm) { width: 320px;}
+ }
 
 .height-50{height: 50px;}
 .height-auto{ min-height: auto;}

@@ -3555,7 +3555,7 @@ fieldset[disabled] .btn-danger.focus {
 }
 .btn-facebook {
   background-color: #3b5998;
-  padding: 6px 3px;
+  padding: 6px;
 }
 .btn-link {
   color: #337ab7;
@@ -6827,11 +6827,6 @@ button.close {
 }
 @media screen and (min-width: 480px) {
   #content .box-content {
-    width: 33%;
-  }
-}
-@media (min-width: 768px) {
-  #content .box-content {
     width: 25%;
   }
 }
@@ -7108,8 +7103,13 @@ a:hover {
 .width-19 {
   width: 19%;
 }
-.width-280 {
+.width-bg {
   width: 280px;
+}
+@media (min-width: 768px) {
+  .width-bg {
+    width: 320px;
+  }
 }
 .height-50 {
   height: 50px;
