@@ -326,6 +326,40 @@ a:hover {
 }
 
 
-
+.user-content--visitas{
+  @media (min-width: @screen-sm) {margin-bottom: @margin-base;}
+  & h2 + p{
+    margin-bottom: @line-height-computed;
+    font-size: floor((@font-size-base * 1.3));
+    font-weight: 300;
+    line-height: 1.4;
+  }
+  & p,
+  & h2,
+  & h3
+  & h4{
+      @media (min-width: @screen-sm) {
+        width: 66.66%;
+        margin-left: 16.66%;
+      }
+  }
+  h4{ font-weight: lighter; }
+  & img{
+    margin: @margin-base auto;
+    .img-responsive;
+  }
+  ul{
+    list-style-type: none;
+    padding-left: (@padding-base-vertical*2);
+    margin-bottom: @margin-base;
+  }
+  ul,
+  h3,
+  h4 {
+    @media (min-width: @screen-sm) {
+        text-align: center;
+      }
+  }
+}
 
 
