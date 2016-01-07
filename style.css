@@ -1605,6 +1605,25 @@ body,
   font-style: normal;
   font-weight: 300;
 }
+.user-content a {
+  color: #3ac6b1;
+  border-bottom: 1px solid #3ac6b1;
+}
+.user-content p {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 600px;
+}
+.user-content p:nth-child(2) {
+  color: #8c8c8c;
+  font-family: "bree-serif", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.user-content h5 {
+  font-size: 20px;
+  color: #498D42;
+}
 .list-inside {
   list-style-position: inside;
 }
@@ -3586,6 +3605,10 @@ fieldset[disabled] .btn-link:focus {
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
+}
+.btn-small {
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .btn-block {
   display: block;
@@ -6841,6 +6864,9 @@ a:hover {
 .left-20 {
   left: 20%;
 }
+.left--20 {
+  left: 20px;
+}
 .left-14 {
   left: 14px;
 }
@@ -6967,11 +6993,20 @@ a:hover {
 .width-19 {
   width: 19%;
 }
+.width-280 {
+  width: 280px;
+}
 .height-50 {
   height: 50px;
 }
 .height-auto {
   min-height: auto;
+}
+.height-1200 {
+  height: 1200px;
+}
+.height-30 {
+  height: 30px;
 }
 .no-padding {
   padding: 0 !important;
@@ -7190,6 +7225,9 @@ a:hover {
 }
 .margin-bottom--xxlarge {
   margin-bottom: 160px;
+}
+.no-margin--top {
+  margin-top: 0;
 }
 .margin-top {
   margin-top: 20px;
