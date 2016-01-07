@@ -6835,6 +6835,25 @@ button.close {
     width: 20%;
   }
 }
+#content .box-content--large {
+  width: 100%;
+  padding: 15px;
+}
+@media screen and (min-width: 480px) {
+  #content .box-content--large {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #content .box-content--large {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  #content .box-content--large {
+    width: 20%;
+  }
+}
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
