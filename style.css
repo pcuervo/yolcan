@@ -1609,13 +1609,13 @@ body,
   color: #3ac6b1;
   border-bottom: 1px solid #3ac6b1;
 }
-.user-content article {
+.user-content article p {
   margin-top: 20px;
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: 600px;
 }
-.user-content p:first-child {
+.user-content p:nth-child(4) {
   color: #8c8c8c;
   font-family: "bree-serif", sans-serif;
   font-style: normal;
@@ -7119,6 +7119,9 @@ a:hover {
 }
 .height-1200 {
   height: 1200px;
+}
+.height-500 {
+  height: 500px;
 }
 .height-30 {
   height: 30px;
