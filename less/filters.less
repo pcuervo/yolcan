@@ -1,0 +1,69 @@
+/*------------------------------------*\
+    #FILTERS
+\*------------------------------------*/
+.filters{}
+
+.filters__tabs{ background: @secondary; }
+
+.tab-filter{
+    padding: @padding-base-vertical 20px @padding-base-vertical @padding-base-vertical; margin: (@margin-base/6) 0;
+    color: @light!important;
+    background: @secondary;
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    white-space: nowrap; text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    .transition();
+}
+.tab-filter:after{
+    content: '\f107';
+    width: 20px; height: 15px;
+    font-family: 'FontAwesome';
+    position:absolute; right: 0;
+}
+.tab-filter--active{
+    color: @secondary!important;
+    background: @light;
+}
+.tab-filter--active:after{
+    content: '\f106';
+}
+
+
+.filters__content, .filters__content>div{ .transition(); }
+.filters__content>div{
+    height: 0px; padding-bottom: 0px !important;
+    overflow: hidden;
+}
+
+
+.filter{
+    position: relative;
+}
+
+// .filter--active{
+//     background: @dark !important;
+//     color: @claro !important;
+// }
+
+.filter--info{
+    padding-right: 26px;
+}
+.filter--info span{
+    width: 20px; height: 100%;
+    position: absolute; top: 0; right: 0;
+    background: @gray-dark;
+}
+
+
+.filters__results{
+    padding-bottom: 0;
+    background: @gray-lighter;
+}
+.filters__results p{
+    margin-bottom: (20px/2);
+}
+.filters__results .filter{
+    margin-left: 2px; margin-right: 2px;
+}
