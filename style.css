@@ -3553,6 +3553,10 @@ fieldset[disabled] .btn-danger.focus {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
+.btn-facebook {
+  background-color: #3b5998;
+  padding: 6px 3px;
+}
 .btn-link {
   color: #337ab7;
   font-weight: normal;
@@ -6724,12 +6728,17 @@ button.close {
   box-sizing: border-box;
   /* Opera/IE 8+ */
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 480px) {
   #content .box-content {
     width: 33%;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 768px) {
+  #content .box-content {
+    width: 25%;
+  }
+}
+@media (min-width: 1200px) {
   #content .box-content {
     width: 20%;
   }
@@ -6867,11 +6876,17 @@ a:hover {
 .left-20 {
   left: 20%;
 }
+.left--20 {
+  left: 20px;
+}
 .left-14 {
   left: 14px;
 }
 .top-23 {
   top: 23px;
+}
+.top-3 {
+  top: 3px;
 }
 .z-index--1 {
   z-index: 1;
@@ -6993,11 +7008,20 @@ a:hover {
 .width-19 {
   width: 19%;
 }
+.width-280 {
+  width: 280px;
+}
 .height-50 {
   height: 50px;
 }
+.height-auto {
+  min-height: auto;
+}
 .height-1200 {
   height: 1200px;
+}
+.height-30 {
+  height: 30px;
 }
 .no-padding {
   padding: 0 !important;
@@ -7216,6 +7240,9 @@ a:hover {
 }
 .margin-bottom--xxlarge {
   margin-bottom: 160px;
+}
+.no-margin--top {
+  margin-top: 0;
 }
 .margin-top {
   margin-top: 20px;

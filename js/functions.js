@@ -65,7 +65,3 @@ if(input !== null) {
     }, false);
   });
 }
-
-
-
-
