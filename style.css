@@ -3606,10 +3606,6 @@ fieldset[disabled] .btn-link:focus {
   line-height: 1.5;
   border-radius: 3px;
 }
-.btn-small {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
 .btn-block {
   display: block;
   width: 100%;
