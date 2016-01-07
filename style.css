@@ -1605,26 +1605,6 @@ body,
   font-style: normal;
   font-weight: 300;
 }
-.user-content a {
-  color: #3ac6b1;
-  border-bottom: 1px solid #3ac6b1;
-}
-.user-content article p {
-  margin-top: 20px;
-  font-family: "proxima-nova", sans-serif;
-  font-style: normal;
-  font-weight: 600px;
-}
-.user-content p:nth-child(3) {
-  color: #8c8c8c;
-  font-family: "bree-serif", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-}
-.user-content h5 {
-  font-size: 26px;
-  color: #498D42;
-}
 .list-inside {
   list-style-position: inside;
 }
@@ -5511,12 +5491,6 @@ a.thumbnail.active {
   border-radius: 50%;
   margin: auto;
 }
-.user-content img {
-  width: 100%;
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
@@ -7528,6 +7502,62 @@ a:hover {
   .user-content--visitas h4 {
     text-align: center;
   }
+}
+.user-content-blog {
+  border-bottom: 2px solid #000;
+  height: 500px;
+}
+.user-content-blog a {
+  color: #3ac6b1;
+  border-bottom: 1px solid #3ac6b1;
+}
+.user-content-blog article p {
+  margin-top: 20px;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 600px;
+}
+.user-content-blog p:nth-child(3) {
+  color: #8c8c8c;
+  font-family: "bree-serif", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.user-content-blog h5 {
+  font-size: 26px;
+  color: #498D42;
+}
+.user-content-blog img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.user-content a {
+  color: #3ac6b1;
+  border-bottom: 1px solid #3ac6b1;
+}
+.user-content article p {
+  margin-top: 20px;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 600px;
+}
+.user-content p:nth-child(3) {
+  color: #8c8c8c;
+  font-family: "bree-serif", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+.user-content h5 {
+  font-size: 26px;
+  color: #498D42;
+}
+.user-content img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 @-ms-viewport {
   width: device-width;
