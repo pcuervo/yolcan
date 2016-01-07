@@ -1139,7 +1139,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #e9e9e9;
 }
 .sr-only {
   position: absolute;
@@ -1458,7 +1458,7 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e9e9e9;
 }
 ul,
 ol {
@@ -1526,7 +1526,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #e6e6e6;
+  border-left: 5px solid #e9e9e9;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -1550,7 +1550,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #e6e6e6;
+  border-right: 5px solid #e9e9e9;
   border-left: 0;
   text-align: right;
 }
@@ -2692,7 +2692,7 @@ output {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #e6e6e6;
+  background-color: #e9e9e9;
   opacity: 1;
 }
 .form-control[disabled],
@@ -4091,7 +4091,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #555555;
   text-align: center;
-  background-color: #e6e6e6;
+  background-color: #e9e9e9;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -4192,7 +4192,7 @@ nav a:focus {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #e6e6e6;
+  background-color: #e9e9e9;
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -4207,7 +4207,7 @@ nav a:focus {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #e6e6e6;
+  background-color: #e9e9e9;
   border-color: #337ab7;
 }
 .nav .nav-divider {
@@ -4233,7 +4233,7 @@ nav a:focus {
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #e6e6e6 #e6e6e6 #ddd;
+  border-color: #e9e9e9 #e9e9e9 #ddd;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -5029,7 +5029,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #e6e6e6;
+  background-color: #e9e9e9;
 }
 .pager .next > a,
 .pager .next > span {
@@ -5201,7 +5201,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #e6e6e6;
+  background-color: #e9e9e9;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5213,7 +5213,7 @@ a.badge:focus {
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #cccccc;
+  border-top-color: #cfcfcf;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
@@ -5542,7 +5542,7 @@ button.list-group-item {
 .list-group-item.disabled,
 .list-group-item.disabled:hover,
 .list-group-item.disabled:focus {
-  background-color: #e6e6e6;
+  background-color: #e9e9e9;
   color: #777777;
   cursor: not-allowed;
 }
@@ -6980,7 +6980,7 @@ a:hover {
   background-color: #3ac6b1;
 }
 .bg-gray-lighter {
-  background-color: #e6e6e6;
+  background-color: #e9e9e9;
 }
 .bg-gray {
   background-color: #d9d9d9;
