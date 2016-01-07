@@ -178,7 +178,7 @@
 				</div>
 			</div>
 
-			
+
 			<div class="[ col-xs-12 ][ text-center ]">
 				<a data-toggle="modal" data-target="#unete" class="[ btn btn-secondary ][ margin-bottom ]">únete</a>
 			</div>
@@ -240,7 +240,7 @@
 								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/phone-5.svg">
 								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">555555-5555</span>
 							</a>
-							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href="whatsapp://send?abid=username&text=Hola"><!-- href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" -->
+							<a class="[ social-media ][ color-light color-secondary--hover no-decoration ]" href=""><!-- whatsapp://send?abid=username&text=Hola --><!-- href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" -->
 								<img class="[ svg icon icon--iconed--xlarge icon--thickness-3 icon--fill ][ color-light ]" src="icons/logo-whatsapp.svg">
 								<span class="[ hidden-xs ][ margin-left--small ][ inline-block align-middle ]">555555-5555</span>
 							</a>
@@ -313,40 +313,39 @@
 			<div class="[ modal-dialog ]">
 				<div class="[ modal-content ]">
 					<div class="[ modal-body ][ color-light ]">
-						<div class="[ row ]">
-							<div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ] ">
-								<div class="[ bg-primary-darken ][ padding--top-bottom--large ]">
-									<button type="button" class="[ close ][ pull-right  ]" data-dismiss="modal">
-										<img class="[ svg ][ icon icon--iconed--normal icon--stroke icon--thickness-2 ][ color-secondary ][ absolute right-25 ]"src="icons/close.svg">
-									</button>
-									<div class="[ row ]">
-										<div class="[ col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 ]">
-											<h2 class="[ text-center ]">¡Bienvenido!</h2>
-											<p class="[ text-center ][ margin-bottom ]">Ingresa tus datos y comienza a formar parte de la comunidad <span class=" [ text-uppercase ]">yolcan</span></p>
-											<form class="[ border-bottom--primary--medium ][ margin-bottom ][ text-left ]">
-												<div class="[ form-group ]">
-													<label class="[ sans-serif ]">Nombre</label>
-													<input type="text" class="[ form-control no-border-radius color-gray-xlight ]">
-												</div>
-												<div class="[ form-group ]">
-													<label class="[ sans-serif ]">Correo</label>
-													<input type="email" class="[ form-control no-border-radius color-gray-xlight ]">
-												</div>
-												<div class="[ form-group ]">
-													<label class="[ sans-serif ]">Teléfono</label>
-													<input type="text" class="[ form-control no-border-radius color-gray-xlight ]">
-												</div>
-												<div class="[ text-center ]">
-													<button type="submit" href="#" class="[ btn btn-secondary ][ margin-bottom ]">únete</button>
-												</div>
-											</form>
-											<div class="[ text-center ]">
-												<a class="[ " href="https://www.facebook.com">
-													<img class="[ svg icon icon--iconed--medium icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
-												</a>
-												<p class="[ inline-block ][ small sans-serif ]">Ingresa con tu cuenta en Facebook</p>
-											</div>
+						<div class="[ bg-primary-darken width-bg margin-auto ][ padding--top-bottom ]">
+							<button type="button" class="[ close ][ pull-right relative left--20 z-index--100   ]" data-dismiss="modal">
+								<img class="[ svg ][ icon icon--iconed--normal icon--stroke icon--thickness-2 ][ color-secondary ][ absolute right-25 ]"src="icons/close.svg">
+							</button>
+							<div class="[ row ]">
+								<div class="[ col-xs-10 col-xs-offset-1 ]">
+									<h2 class="[ text-center ][ no-margin--top ]">¡Bienvenido!</h2>
+									<p class="[ text-center ]">Ingresa tus datos y comienza a formar parte de la comunidad <span class=" [ text-uppercase ]">yolcan</span></p>
+									<form class="[ border-bottom--primary--medium ][ margin-bottom ][ text-left ]">
+										<div class="[ form-group ]">
+											<label class="[ sans-serif ][ no-margin ]">Nombre</label>
+											<input type="text" class="[ form-control no-border-radius color-gray-xlight height-30 ]">
 										</div>
+										<div class="[ form-group ]">
+											<label class="[ sans-serif ][ no-margin ]">Correo</label>
+											<input type="email" class="[ form-control no-border-radius color-gray-xlight height-30 ]">
+										</div>
+										<div class="[ form-group ]">
+											<label class="[ sans-serif ][ no-margin ]">Teléfono</label>
+											<input type="text" class="[ form-control no-border-radius color-gray-xlight height-30 ]">
+										</div>
+										<div class="[ text-center ]">
+											<button type="submit" href="#" class="[ btn btn-secondary padding--top-bottom--xsmall ][ margin-bottom ]">únete</button>
+										</div>
+									</form>
+									<div class="[ text-center ]">
+										<a href="https://www.facebook.com">
+											<p class="[ small sans-serif  ][ color-light ][ inline-block align-middle no-margin ]">Ingresa con</p>
+											<button type="submit" href="#" class="[ btn btn-facebook ][ inline-block align-middle margin-left--small ]">
+												<img class="[ svg icon icon--iconed--normal icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
+												<span class="[ color-light ][ inline-block align-middle ]">Facebook</span>
+											</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -355,6 +354,53 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- modal ingresa -->
+		<div id="ingresa" class="[ modal fade ]" role="dialog">
+			<div class="[ modal-dialog ]">
+				<div class="[ modal-content ]">
+					<div class="[ modal-body ][ color-light ]">
+						<div class="[ bg-primary-darken width-bg margin-auto ][ padding--top-bottom--large ]">
+							<button type="button" class="[ close ][ pull-right relative left--20 z-index--100 ]" data-dismiss="modal">
+								<img class="[ svg ][ icon icon--iconed--normal icon--stroke icon--thickness-2 ][ color-secondary ][ absolute right-25 ]"src="icons/close.svg">
+							</button>
+							<div class="[ row ]">
+								<div class="[ col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 ]">
+									<h2 class="[ text-center ][ no-margin--top ]">¡Bienvenido!</h2>
+									<p class="[ text-center ]">Ingresa en tu cuenta de <span class=" [ text-uppercase ]">yolcan</span></p>
+									<form class="[ border-bottom--primary--medium ][ margin-bottom ][ text-left ]">
+										<div class="[ form-group ]">
+											<label class="[ sans-serif ]">Usuario</label>
+											<input type="text" class="[ form-control no-border-radius color-gray-xlight height-30 ]">
+										</div>
+										<div class="[ form-group ]">
+											<label class="[ sans-serif ]">Contraseña</label>
+											<input type="password" class="[ form-control no-border-radius color-gray-xlight height-30 ]">
+										</div>
+										<div class="[ text-center ][ margin-bottom ]">
+											<button type="submit" href="#" class="[ btn btn-secondary padding--top-bottom--xsmall ]">ingresa</button>
+										</div>
+										<p class="[ text-center ][ margin-bottom ][ small sans-serif ]">¿Olvidaste tu contraseña?</p>
+										<div class="[ text-center ]">
+											<button type="submit" href="#" class="[ btn btn-secondary padding--top-bottom--xsmall ][ margin-bottom ]">crear cuenta</button>
+										</div>
+									</form>
+									<div class="[ text-center ]">
+										<a href="https://www.facebook.com">
+											<p class="[ small sans-serif  ][ color-light ][ inline-block align-middle no-margin ]">Ingresa con</p>
+											<button type="submit" href="#" class="[ btn btn-facebook ][ inline-block align-middle margin-left--small ]">
+												<img class="[ svg icon icon--iconed--normal icon--thickness-3 icon--fill ][ color-light ]" src="icons/facebook.svg">
+												<span class="[ color-light ][ inline-block align-middle ]">Facebook</span>
+											</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div><!-- end bg-primary -->
+					</div><!-- end modal-body -->
+				</div><!-- end modal-content -->
+			</div><!-- end modal-dialog -->
+		</div><!-- end modal -->
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
