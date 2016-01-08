@@ -6306,6 +6306,18 @@ button.close {
   text-decoration: none;
   color: #272c28;
 }
+@media (min-width: 480px) {
+  .modal .bg-primary-darken {
+    margin-top: 40px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .modal .bg-primary-darken {
+    margin-top: 80px;
+  }
+}
 .tooltip {
   position: absolute;
   z-index: 1070;
