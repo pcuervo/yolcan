@@ -7502,11 +7502,15 @@ a:hover {
   font-weight: 300;
   line-height: 1.4;
 }
+.user-content--visitas h2 {
+  margin-top: 60px;
+}
 .user-content--visitas h4 {
   font-weight: lighter;
 }
 .user-content--visitas img {
   margin: 20px auto;
+  padding: 0 15px;
   display: block;
   max-width: 100%;
   height: auto;
@@ -7523,12 +7527,17 @@ a:hover {
     text-align: center;
   }
 }
+.user-content--visitas h2,
+.user-content--visitas h3,
+.user-content--visitas h4,
+.user-content--visitas p {
+  padding: 0 15px;
+}
 @media (min-width: 768px) {
   .user-content--visitas h2,
   .user-content--visitas h3,
   .user-content--visitas h4,
   .user-content--visitas p {
-    padding: 0 15px;
     margin-left: 8.33333%;
     width: 83.33333%;
   }
