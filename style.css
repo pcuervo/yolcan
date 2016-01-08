@@ -6317,6 +6317,9 @@ button.close {
   .modal .bg-primary-darken {
     margin-top: 80px;
   }
+  .modal .bg-primary-darken .close {
+    left: 0px;
+  }
 }
 .tooltip {
   position: absolute;
