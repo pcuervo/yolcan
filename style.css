@@ -7584,6 +7584,10 @@ a:hover {
   max-width: 100%;
   height: auto;
 }
+.user-content {
+  padding-bottom: 36px;
+  margin-bottom: 40px;
+}
 .user-content a {
   color: #3ac6b1;
   border-bottom: 1px solid #3ac6b1;
