@@ -7523,6 +7523,34 @@ a:hover {
     text-align: center;
   }
 }
+@media (min-width: 768px) {
+  .user-content--visitas h2,
+  .user-content--visitas h3,
+  .user-content--visitas h4,
+  .user-content--visitas p {
+    padding: 0 15px;
+    margin-left: 8.33333%;
+    width: 83.33333%;
+  }
+}
+@media (min-width: 992px) {
+  .user-content--visitas h2,
+  .user-content--visitas h3,
+  .user-content--visitas h4,
+  .user-content--visitas p {
+    margin-left: 16.66666%;
+    width: 66.66666%;
+  }
+}
+@media (min-width: 1200px) {
+  .user-content--visitas h2,
+  .user-content--visitas h3,
+  .user-content--visitas h4,
+  .user-content--visitas p {
+    margin-left: 25%;
+    width: 50%;
+  }
+}
 .user-content-blog {
   border-bottom: 2px solid #000;
   height: 500px;
