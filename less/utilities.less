@@ -343,7 +343,7 @@ a:hover {
   h2{ margin-top: 60px; }
   h4{ font-weight: lighter; }
   & img{
-    margin: @margin-base auto;
+    margin: @margin-base auto;padding: 0 (@padding-small-vertical*3);
     .img-responsive;
   }
   ul{
@@ -361,9 +361,8 @@ a:hover {
   & h2,
   & h3,
   & h4,
-  & p{
+  & p{padding: 0 (@padding-small-vertical*3);
     @media (min-width: @screen-sm) {
-      padding: 0 (@padding-small-vertical*3);
       margin-left: 8.33333%;
       width: 83.33333%;
      }
