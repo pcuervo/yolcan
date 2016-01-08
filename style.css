@@ -7502,6 +7502,9 @@ a:hover {
   font-weight: 300;
   line-height: 1.4;
 }
+.user-content--visitas h2 {
+  margin-top: 60px;
+}
 .user-content--visitas h4 {
   font-weight: lighter;
 }
