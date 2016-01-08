@@ -7636,14 +7636,43 @@ a:hover {
   font-weight: 300;
 }
 .user-content h5 {
+  margin-top: 60px;
   font-size: 26px;
   color: #498D42;
 }
 .user-content img {
+  padding: 0 15px;
   width: 100%;
   display: block;
   max-width: 100%;
   height: auto;
+}
+@media (min-width: 992px) {
+  .user-content img {
+    margin-left: 16.66666%;
+    width: 66.66666%;
+  }
+}
+.user-content h5,
+.user-content p,
+.user-content hr {
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .user-content h5,
+  .user-content p,
+  .user-content hr {
+    margin-left: 16.66666%;
+    width: 66.66666%;
+  }
+}
+@media (min-width: 992px) {
+  .user-content h5,
+  .user-content p,
+  .user-content hr {
+    margin-left: 25%;
+    width: 50%;
+  }
 }
 @-ms-viewport {
   width: device-width;

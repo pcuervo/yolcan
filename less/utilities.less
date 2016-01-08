@@ -443,11 +443,24 @@ a:hover {
     .ff-bree-serif;
   }
   & h5{
+    margin-top: 60px;
     .fz-large;
     .color-primary;
   }
    & img{
+    padding: 0 (@padding-small-vertical*3);
     .width-100;
     .img-responsive;
+    @media (min-width: @screen-md) {
+      margin-left: 16.66666%;
+      width: 66.66666%;
+     }
   }
+  & h5,
+  & p,
+  & hr{padding: 0 (@padding-small-vertical*3);
+    @media (min-width: @screen-sm) {
+      margin-left: 16.66666%;
+      width: 66.66666%;
+     }
 }
