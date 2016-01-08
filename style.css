@@ -7670,8 +7670,8 @@ a:hover {
   .user-content h5,
   .user-content p,
   .user-content hr {
-    margin-left: 25%;
-    width: 50%;
+    margin-left: 8.33333%;
+    width: 83.33333%;
   }
 }
 @-ms-viewport {
