@@ -386,9 +386,12 @@ a:hover {
   }
   & article p{
     .margin-top;
+    .sans-serif;
+    font-weight: 600px;
   }
   & p:nth-child(3){
     .color-gray-xlight;
+    .ff-bree-serif;
   }
   & h5{
     .fz-large;
@@ -400,6 +403,30 @@ a:hover {
   }
 }
 
+.user-content--blog{  //blog-mansory.html
+  .border-bottom;
+  & a{
+    color: @secondary;
+    border-bottom: 1px solid @secondary;
+  }
+  & article p{
+    .margin-top;
+    .sans-serif;
+    font-weight: 600px;
+  }
+  & p:nth-child(3){
+    .color-gray-xlight;
+    .ff-bree-serif;
+  }
+  & h5{
+    .fz-large;
+    .color-primary;
+  }
+   & img{
+    .width-100;
+    .img-responsive;
+  }
+}
 
 .user-content{
   .padding--bottom--xlarge;
@@ -410,16 +437,37 @@ a:hover {
   }
   & article p{
     .margin-top;
+    .sans-serif;
+    font-weight: 600px;
   }
   & p:nth-child(3){
     .color-gray-xlight;
+    .ff-bree-serif;
   }
   & h5{
+    margin-top: 60px;
     .fz-large;
     .color-primary;
   }
    & img{
+    padding: 0 (@padding-small-vertical*3);
     .width-100;
     .img-responsive;
+    @media (min-width: @screen-md) {
+      margin-left: 16.66666%;
+      width: 66.66666%;
+     }
+  }
+  & h5,
+  & p,
+  & hr{padding: 0 (@padding-small-vertical*3);
+    @media (min-width: @screen-sm) {
+      margin-left: 16.66666%;
+      width: 66.66666%;
+     }
+     @media (min-width: @screen-md) {
+      margin-left: 8.33333%;
+      width: 83.33333%;
+     }
   }
 }
