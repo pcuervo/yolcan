@@ -1605,6 +1605,14 @@ body,
 .list-style-none {
   list-style-type: none;
 }
+.text-collapse:hover {
+  color: #498D42;
+}
+.text-collapse:active,
+.text-collapse .active,
+.text-collapse:focus {
+  color: #3ac6b1;
+}
 code,
 kbd,
 pre,
@@ -7122,6 +7130,9 @@ a:hover {
 .width-19 {
   width: 19%;
 }
+.width-80 {
+  width: 80px;
+}
 .width-bg {
   width: 280px;
 }
@@ -7144,6 +7155,9 @@ a:hover {
 }
 .height-30 {
   height: 30px;
+}
+.height-35 {
+  height: 35px;
 }
 .no-padding {
   padding: 0 !important;
@@ -7251,8 +7265,8 @@ a:hover {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .padding--sides--xsm--large {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 25%;
+    padding-right: 25%;
   }
 }
 .padding--sides--modal {
