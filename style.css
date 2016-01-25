@@ -1605,13 +1605,11 @@ body,
 .list-style-none {
   list-style-type: none;
 }
-.text-collapse:hover {
-  color: #498D42;
-}
+.text-collapse:hover,
 .text-collapse:active,
 .text-collapse .active,
 .text-collapse:focus {
-  color: #3ac6b1;
+  color: #498D42;
 }
 code,
 kbd,
