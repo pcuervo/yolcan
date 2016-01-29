@@ -1578,6 +1578,9 @@ address {
 .word-spacing {
   word-spacing: 5px;
 }
+.fz-14 {
+  font-size: 14px;
+}
 .fz-16 {
   font-size: 16px;
 }
@@ -1604,6 +1607,17 @@ body,
 }
 .list-style-none {
   list-style-type: none;
+}
+.list p {
+  display: list-item;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+.list-point p {
+  list-style: disc outside none;
+}
+.list-number p {
+  list-style: decimal outside none;
 }
 .text-collapse:hover,
 .text-collapse:active,
@@ -7688,6 +7702,11 @@ a:hover {
     margin-left: 8.33333%;
     width: 83.33333%;
   }
+}
+.ingredientes ul > li {
+  padding-left: 0px;
+  list-style-position: inside;
+  list-style-type: none;
 }
 .hr-primary--dark {
   border-top: 2px solid #272c28;
