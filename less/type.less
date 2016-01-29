@@ -376,15 +376,13 @@ body,
 .list-inside{ list-style-position: inside;}
 .list-style-none{ list-style-type: none;}
 
-.list{
-    & p{
+.list p{
     display:list-item;
     margin-bottom: 0px;
     font-size: 14px;
   }
-}
-.list-point{ & p{ list-style:disc outside none; } }
-.list-number{ & p{ list-style:decimal outside none; } }
+.list-point p{ list-style:disc outside none; }
+.list-number p{ list-style:decimal outside none; }
 
 .text-collapse{
   &:hover, &:active, & .active, &:focus{ color: @primary;}
